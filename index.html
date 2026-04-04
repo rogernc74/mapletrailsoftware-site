@@ -1,82 +1,123 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Maple Trail Software</title>
-
-<style>
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
-    margin: 0;
-    padding: 0;
-    background: #f9fafb;
-    color: #1f2937;
-}
-
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 60px 30px;
-}
-
-h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    font-size: 20px;
-    color: #6b7280;
-}
-
-.section {
-    margin-top: 60px;
-}
-
-.app-card {
-    padding: 20px;
-    border-radius: 10px;
-    background: white;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-    margin-top: 20px;
-}
-
-.footer {
-    margin-top: 80px;
-    font-size: 14px;
-    color: #6b7280;
-}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MapleTrail Software</title>
+  <meta name="description" content="MapleTrail Software builds calm, thoughtfully designed Apple-first software with a focus on useful products that last." />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
-
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="/images/mapletrail-logo.png" alt="MapleTrail Software logo" />
+        <div>
+          <div class="brand-title">MapleTrail Software</div>
+          <div class="brand-sub">Thoughtful software</div>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="/momentslater/">MomentsLater</a>
+      </nav>
+      <a class="btn btn-dark" href="/momentslater/">View MomentsLater</a>
+    </div>
+  </header>
 
-<div class="container">
+  <main>
+    <section class="company-hero">
+      <div class="container company-layout">
+        <div>
+          <span class="badge">Independent software studio • Apple-first products</span>
+          <h1 style="margin:22px 0 0;font-size:clamp(2.8rem,5.2vw,4.8rem);line-height:1.04;letter-spacing:-.045em;">
+            Software with a little more warmth,
+            <span style="display:block;color:var(--accent);">and a little less noise.</span>
+          </h1>
+          <p class="lead" style="max-width:760px;">
+            MapleTrail Software is the home for thoughtful products designed to feel calm, useful,
+            and human. The goal is simple: build apps people actually want to keep using.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/momentslater/">See MomentsLater</a>
+            <a class="btn btn-light" href="mailto:support@mapletrailsoftware.com?subject=MapleTrail%20Software">Email MapleTrail</a>
+          </div>
+        </div>
 
-<h1>Maple Trail Software</h1>
-<p class="subtitle">Thoughtful apps for everyday life.</p>
+        <div class="card company-card">
+          <img class="company-mark" src="/images/mapletrail-logo.png" alt="MapleTrail mark" />
+          <h2 style="margin:20px 0 0;font-size:2rem;letter-spacing:-.03em;">Currently building</h2>
+          <p style="margin:14px 0 0;color:var(--muted);font-size:1.04rem;line-height:1.75;">
+            MomentsLater — a calm app for capturing meaningful life moments before they slip away,
+            then revisiting them later with more context and heart.
+          </p>
+          <div style="margin-top:22px;">
+            <a class="btn btn-dark" href="/momentslater/">Open product page</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="section">
-<h2>Apps</h2>
+    <section id="products" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Products</div>
+          <h2>Small product lineup. Big attention to detail.</h2>
+          <p>
+            MapleTrail Software is building a focused lineup of products designed with clarity,
+            restraint, and long-term usefulness in mind. Each release is shaped to feel polished,
+            approachable, and genuinely worth keeping.
+          </p>
+        </div>
 
-<div class="app-card">
-<h3>MomentsLater</h3>
-<p>A simple way to capture and revisit life’s small moments.</p>
-<p><em>Coming soon</em></p>
-</div>
+        <div class="company-links">
+          <a class="card link-card" href="/momentslater/">
+            <h3>MomentsLater</h3>
+            <p>A calm app for capturing meaningful moments, revisiting them later, and holding onto more of everyday life.</p>
+            <div class="arrow">Open product page →</div>
+          </a>
 
-</div>
+          <a class="card link-card" href="mailto:support@mapletrailsoftware.com?subject=MapleTrail%20Software">
+            <h3>Get in touch</h3>
+            <p>Questions, partnership ideas, or interest in MapleTrail products can be sent directly by email.</p>
+            <div class="arrow">support@mapletrailsoftware.com</div>
+          </a>
+        </div>
+      </div>
+    </section>
 
-<div class="section">
-<h2>Contact</h2>
-<p>hi@mapletrailsoftware.com</p>
-</div>
+    <section id="about" class="section band">
+      <div class="container about-grid">
+        <div>
+          <div class="kicker">About MapleTrail</div>
+          <h2>Built for products that feel personal, clear, and enduring.</h2>
+          <p style="margin-top:16px;color:var(--muted);font-size:1.06rem;line-height:1.8;">
+            MapleTrail Software creates independent software with an Apple-first focus, strong product
+            fundamentals, and a quieter approach to digital experiences. The aim is to ship software
+            that feels human, useful, and carefully made.
+          </p>
+        </div>
 
-<div class="footer">
-© 2026 Maple Trail Software
-</div>
+        <div class="soft-card">
+          <div class="eyebrow" style="color:rgba(24,35,38,.52);font-size:12px;letter-spacing:.25em;text-transform:uppercase;">What guides the work</div>
+          <ul>
+            <li>Useful products over noisy feature overload.</li>
+            <li>Apple-first experiences with room to grow over time.</li>
+            <li>Design that feels calm, warm, and easy to trust.</li>
+            <li>Small details handled with real care.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
 
-</div>
-
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© 2026 MapleTrail Software</div>
+      <div>support@mapletrailsoftware.com</div>
+    </div>
+  </footer>
 </body>
 </html>
