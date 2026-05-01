@@ -529,6 +529,182 @@ a{color:inherit;text-decoration:none}
 .ifneeded-closing > div:first-child{
   max-width:760px;
 }
+
+.momentsaway-hero{
+  position:relative;
+  overflow:hidden;
+  min-height:min(620px, calc(84vh - 78px));
+  background:#e9f0ed;
+  display:flex;
+  align-items:center;
+}
+.momentsaway-map-wash{
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(64,118,111,.28), transparent 32%),
+    radial-gradient(circle at 86% 22%, rgba(216,77,47,.16), transparent 34%),
+    linear-gradient(135deg, rgba(14,40,51,.08), rgba(255,255,255,.42));
+}
+.momentsaway-map-wash::after{
+  content:"";
+  position:absolute;
+  inset:8% -8% -12% 34%;
+  background:url("/images/momentsaway/map.jpg") center/cover no-repeat;
+  opacity:.13;
+  transform:rotate(-7deg);
+  border-radius:42px;
+  filter:saturate(.75);
+}
+.momentsaway-hero-inner{
+  position:relative;
+  display:grid;
+  grid-template-columns:1fr minmax(320px, 500px);
+  gap:44px;
+  align-items:center;
+  padding-top:42px;
+  padding-bottom:42px;
+}
+.momentsaway-hero-copy h1{
+  margin:18px 0 0;
+  font-size:clamp(4rem, 8vw, 7rem);
+  line-height:.92;
+  letter-spacing:-.055em;
+}
+.momentsaway-hero-copy p{
+  max-width:780px;
+  margin:24px 0 0;
+  color:rgba(24,35,38,.74);
+  font-size:clamp(1.18rem, 2vw, 1.55rem);
+  line-height:1.55;
+}
+.momentsaway-shot-stack{
+  position:relative;
+  min-height:510px;
+}
+.momentsaway-shot-stack img{
+  width:min(250px, 66vw);
+  border-radius:38px;
+  box-shadow:0 30px 70px rgba(24,35,38,.24);
+  border:1px solid rgba(255,255,255,.7);
+}
+.momentsaway-shot-main{
+  position:absolute;
+  right:116px;
+  top:0;
+  z-index:2;
+}
+.momentsaway-shot-side{
+  position:absolute;
+  right:0;
+  top:72px;
+  opacity:.94;
+  transform:scale(.9);
+}
+.momentsaway-feature-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:18px;
+  margin-top:34px;
+}
+.momentsaway-feature{padding:28px}
+.momentsaway-feature .feature-icon{
+  font-size:1rem;
+  font-weight:800;
+  background:rgba(64,118,111,.13);
+  color:#40766f;
+}
+.momentsaway-feature h3{
+  margin:18px 0 0;
+  font-size:1.32rem;
+  letter-spacing:-.02em;
+}
+.momentsaway-feature p{
+  margin:12px 0 0;
+  color:var(--muted);
+  line-height:1.72;
+}
+.momentsaway-shot-gallery{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:18px;
+  margin-top:44px;
+}
+.momentsaway-shot-gallery figure{
+  margin:0;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:30px;
+  box-shadow:var(--shadow);
+  padding:14px;
+}
+.momentsaway-shot-gallery img{
+  width:100%;
+  border-radius:22px;
+}
+.momentsaway-shot-gallery figcaption{
+  margin-top:12px;
+  padding:0 4px 4px;
+  color:var(--muted);
+  font-weight:700;
+  font-size:.95rem;
+}
+.momentsaway-privacy-band{
+  background:#102d3a;
+  color:#fff;
+}
+.momentsaway-privacy-band .kicker{color:rgba(255,255,255,.65)}
+.momentsaway-privacy-band p{color:rgba(255,255,255,.74)}
+.momentsaway-split{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:34px;
+  align-items:center;
+}
+.momentsaway-split h2,
+.momentsaway-closing h2{
+  margin:16px 0 0;
+  font-size:clamp(2.15rem, 3.6vw, 3.6rem);
+  line-height:1.08;
+  letter-spacing:-.04em;
+}
+.momentsaway-split p,
+.momentsaway-closing p{
+  margin:18px 0 0;
+  color:var(--muted);
+  font-size:1.08rem;
+  line-height:1.78;
+}
+.momentsaway-privacy-band .momentsaway-split p{color:rgba(255,255,255,.74)}
+.momentsaway-privacy-band .btn{margin-top:24px}
+.momentsaway-privacy-list{
+  display:grid;
+  gap:14px;
+}
+.momentsaway-privacy-list div{
+  padding:22px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:24px;
+  background:rgba(255,255,255,.06);
+}
+.momentsaway-privacy-list strong,
+.momentsaway-privacy-list span{display:block}
+.momentsaway-privacy-list span{
+  margin-top:6px;
+  color:rgba(255,255,255,.68);
+}
+.momentsaway-premium .soft-card{
+  background:#eef5f1;
+}
+.momentsaway-closing{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:28px;
+}
+.momentsaway-closing > div:first-child{
+  max-width:760px;
+}
 .watch-card{
   background:var(--text);color:#fff;border-radius:30px;padding:48px;
   box-shadow:var(--shadow-lg);
@@ -639,10 +815,15 @@ a{color:inherit;text-decoration:none}
 @media (max-width: 1050px){
   .hero-grid,.steps,.split,.about-grid,.company-layout{grid-template-columns:1fr}
   .ifneeded-hero-inner,.ifneeded-split{grid-template-columns:1fr}
+  .momentsaway-hero-inner,.momentsaway-split{grid-template-columns:1fr}
   .ifneeded-hero{min-height:auto}
+  .momentsaway-hero{min-height:auto}
   .ifneeded-shot-stack{min-height:570px;max-width:520px}
+  .momentsaway-shot-stack{min-height:580px;max-width:540px}
   .ifneeded-shot-main{left:0;right:auto}
+  .momentsaway-shot-main{left:0;right:auto}
   .ifneeded-shot-side{right:0}
+  .momentsaway-shot-side{right:0}
   .features{grid-template-columns:repeat(2,1fr)}
   .story-grid{grid-template-columns:repeat(2,1fr)}
   .hero-showcase{padding:18px 0 72px}
@@ -653,14 +834,19 @@ a{color:inherit;text-decoration:none}
 }
 @media (max-width: 760px){
   .nav{display:none}
-  .stats,.phone-tools,.use-cases,.company-links,.waitlist-form,.features,.ifneeded-feature-grid,.ifneeded-shot-gallery{grid-template-columns:1fr}
+  .stats,.phone-tools,.use-cases,.company-links,.waitlist-form,.features,.ifneeded-feature-grid,.ifneeded-shot-gallery,.momentsaway-feature-grid,.momentsaway-shot-gallery{grid-template-columns:1fr}
   .ifneeded-hero-inner{padding-top:54px;padding-bottom:46px}
   .ifneeded-hero-copy h1{font-size:clamp(3.5rem, 18vw, 5.2rem)}
   .ifneeded-hero-bg img{width:520px;right:-230px;top:34%;opacity:.1}
+  .momentsaway-map-wash::after{inset:16% -30% 12% 10%;opacity:.11}
   .ifneeded-shot-stack{min-height:auto;display:grid;gap:16px}
+  .momentsaway-shot-stack{min-height:auto;display:grid;gap:16px}
   .ifneeded-shot-stack img{position:static;width:min(320px, 100%);margin:0 auto;transform:none}
+  .momentsaway-shot-stack img{position:static;width:min(320px, 100%);margin:0 auto;transform:none}
   .ifneeded-shot-side{display:none}
+  .momentsaway-shot-side{display:none}
   .ifneeded-closing{display:block}
+  .momentsaway-closing{display:block}
   .phone-meta{grid-template-columns:1fr 1fr}
   .hero-grid{padding:64px 0 70px}
   .section{padding:68px 0}
