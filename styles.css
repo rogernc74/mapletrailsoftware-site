@@ -128,7 +128,21 @@ a{color:inherit;text-decoration:none}
   color:rgba(24,35,38,.73);
   line-height:1.6;
 }
-.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.hero-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:28px}
+.app-store-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:56px;
+  border-radius:13px;
+  transition:.18s ease;
+}
+.app-store-link:hover{transform:translateY(-1px)}
+.app-store-link img{
+  width:170px;
+  height:auto;
+  border-radius:13px;
+}
 .platform-row{margin-top:14px;font-size:13px;letter-spacing:.18em;color:rgba(24,35,38,.45);text-transform:uppercase}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px;max-width:690px}
 .stat{
