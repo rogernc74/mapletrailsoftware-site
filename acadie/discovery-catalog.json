@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": 1,
+  "version": 2,
   "updatedAt": "2026-05-30T00:00:00Z",
   "entries": [
     {
@@ -8,7 +8,13 @@
       "name": "Aucoin Bakery",
       "category": "bakery_cafe",
       "regionID": "cheticamp_cape_breton",
+      "regionIDs": [
+        "cheticamp_cape_breton"
+      ],
       "placeID": "cheticamp",
+      "placeIDs": [
+        "cheticamp"
+      ],
       "townOrCommunity": "Petit Étang / Chéticamp",
       "provinceOrState": "Nova Scotia",
       "country": "Canada",
@@ -28,6 +34,7 @@
         "shared_acadian_threads"
       ],
       "relatedStoryIDs": [],
+      "relatedNameIDs": [],
       "websiteURL": "https://www.aucoinbakery.com/en/index.php",
       "sourceURLs": [
         "https://www.aucoinbakery.com/en/index.php"
@@ -43,7 +50,13 @@
       "name": "Village Historique Acadien",
       "category": "living_history",
       "regionID": "acadian_peninsula",
+      "regionIDs": [
+        "acadian_peninsula"
+      ],
       "placeID": "caraquet",
+      "placeIDs": [
+        "caraquet"
+      ],
       "townOrCommunity": "Rivière-du-Nord / Caraquet area",
       "provinceOrState": "New Brunswick",
       "country": "Canada",
@@ -63,6 +76,7 @@
         "acadian_peninsula"
       ],
       "relatedStoryIDs": [],
+      "relatedNameIDs": [],
       "websiteURL": "https://villagehistoriqueacadien.com/",
       "sourceURLs": [
         "https://villagehistoriqueacadien.com/"
@@ -78,7 +92,13 @@
       "name": "Le Pays de la Sagouine",
       "category": "cultural_centre",
       "regionID": "southeastern_new_brunswick",
+      "regionIDs": [
+        "southeastern_new_brunswick"
+      ],
       "placeID": "bouctouche",
+      "placeIDs": [
+        "bouctouche"
+      ],
       "townOrCommunity": "Bouctouche",
       "provinceOrState": "New Brunswick",
       "country": "Canada",
@@ -98,6 +118,7 @@
         "shared_acadian_threads"
       ],
       "relatedStoryIDs": [],
+      "relatedNameIDs": [],
       "websiteURL": "https://sagouine.com/fr/notre-univers/le-pays-de-la-sagouine",
       "sourceURLs": [
         "https://sagouine.com/fr/notre-univers/le-pays-de-la-sagouine"
@@ -113,7 +134,13 @@
       "name": "Les Trois Pignons",
       "category": "museum",
       "regionID": "cheticamp_cape_breton",
+      "regionIDs": [
+        "cheticamp_cape_breton"
+      ],
       "placeID": "cheticamp",
+      "placeIDs": [
+        "cheticamp"
+      ],
       "townOrCommunity": "Chéticamp",
       "provinceOrState": "Nova Scotia",
       "country": "Canada",
@@ -133,6 +160,7 @@
         "shared_acadian_threads"
       ],
       "relatedStoryIDs": [],
+      "relatedNameIDs": [],
       "websiteURL": "https://www.lestroispignons.com/",
       "sourceURLs": [
         "https://www.lestroispignons.com/"
@@ -148,7 +176,13 @@
       "name": "Acadian Museum / Musée acadien",
       "category": "museum",
       "regionID": "prince_edward_island",
+      "regionIDs": [
+        "prince_edward_island"
+      ],
       "placeID": "miscouche",
+      "placeIDs": [
+        "miscouche"
+      ],
       "townOrCommunity": "Miscouche",
       "provinceOrState": "Prince Edward Island",
       "country": "Canada",
@@ -165,6 +199,7 @@
         "shared_acadian_threads"
       ],
       "relatedStoryIDs": [],
+      "relatedNameIDs": [],
       "websiteURL": "https://www.tourismpei.com/attractions/acadian-museummusee-acadien",
       "sourceURLs": [
         "https://www.tourismpei.com/attractions/acadian-museummusee-acadien"
@@ -180,7 +215,13 @@
       "name": "Festival acadien de Caraquet",
       "category": "festival",
       "regionID": "acadian_peninsula",
+      "regionIDs": [
+        "acadian_peninsula"
+      ],
       "placeID": "caraquet",
+      "placeIDs": [
+        "caraquet"
+      ],
       "townOrCommunity": "Caraquet",
       "provinceOrState": "New Brunswick",
       "country": "Canada",
@@ -199,6 +240,7 @@
         "acadian_peninsula"
       ],
       "relatedStoryIDs": [],
+      "relatedNameIDs": [],
       "websiteURL": "https://caraquet.ca/en/visitors",
       "sourceURLs": [
         "https://caraquet.ca/en/visitors"

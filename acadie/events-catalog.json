@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": 2,
+  "version": 3,
   "updatedAt": "2026-05-30T00:00:00Z",
   "events": [
     {
@@ -8,7 +8,13 @@
       "name": "Festival acadien de Caraquet 2026",
       "category": "festival",
       "regionID": "acadian_peninsula",
+      "regionIDs": [
+        "acadian_peninsula"
+      ],
       "placeID": "caraquet",
+      "placeIDs": [
+        "caraquet"
+      ],
       "townOrCommunity": "Caraquet",
       "provinceOrState": "New Brunswick",
       "country": "Canada",
@@ -55,7 +61,13 @@
       "name": "Le Pays de la Sagouine 2026 Program",
       "category": "performance",
       "regionID": "southeastern_new_brunswick",
+      "regionIDs": [
+        "southeastern_new_brunswick"
+      ],
       "placeID": "bouctouche",
+      "placeIDs": [
+        "bouctouche"
+      ],
       "townOrCommunity": "Bouctouche",
       "provinceOrState": "New Brunswick",
       "country": "Canada",

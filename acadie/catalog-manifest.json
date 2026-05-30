@@ -3,15 +3,15 @@
   "updatedAt": "2026-05-30T00:00:00Z",
   "catalogs": {
     "discovery": {
-      "version": 1,
+      "version": 2,
       "url": "https://mapletrailsoftware.com/acadie/discovery-catalog.json",
-      "sha256": "027aeac1055bc1a7cc583c15aca1826dcc4f5b2b0686222db43745f94ba2a296",
+      "sha256": "c448f540313524524f7ccd623de4bffb7d0e9ce3c4a0a31337e72f11b63a37c8",
       "requiredAppVersion": null
     },
     "events": {
-      "version": 2,
+      "version": 3,
       "url": "https://mapletrailsoftware.com/acadie/events-catalog.json",
-      "sha256": "803557f0f13f14f1c89bf690f0a25187648f156751cf20a3eae5573589176d80",
+      "sha256": "ce294ddc644cb90e38737c73e4e2821bd1416ab9a72eaee37ddd4a461e9eee2e",
       "requiredAppVersion": null
     },
     "foodTrails": {
