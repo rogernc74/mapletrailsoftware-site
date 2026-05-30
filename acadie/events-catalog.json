@@ -1,6 +1,100 @@
 {
   "schemaVersion": 1,
-  "version": 1,
+  "version": 2,
   "updatedAt": "2026-05-30T00:00:00Z",
-  "events": []
+  "events": [
+    {
+      "id": "festival-acadien-caraquet-2026",
+      "name": "Festival acadien de Caraquet 2026",
+      "category": "festival",
+      "regionID": "acadian_peninsula",
+      "placeID": "caraquet",
+      "townOrCommunity": "Caraquet",
+      "provinceOrState": "New Brunswick",
+      "country": "Canada",
+      "dateLabel": {
+        "en": "August 2-15, 2026",
+        "fr-CA": "2 au 15 août 2026"
+      },
+      "seasonLabel": {
+        "en": "Summer",
+        "fr-CA": "Été"
+      },
+      "shortDescription": {
+        "en": "Caraquet's major Acadian festival season, centered on music, public celebration, and National Acadian Day.",
+        "fr-CA": "La grande saison festivalière acadienne de Caraquet, centrée sur la musique, la fête publique et la Fête nationale de l'Acadie."
+      },
+      "whyItBelongs": {
+        "en": "It gives travelers a time-sensitive reason to plan around Caraquet, the Tintamarre tradition, and the Acadian Peninsula.",
+        "fr-CA": "Il donne aux visiteurs une raison saisonnière de planifier autour de Caraquet, de la tradition du Tintamarre et de la Péninsule acadienne."
+      },
+      "relatedDiscoveryEntryIDs": [
+        "festival-acadien-caraquet",
+        "village-historique-acadien"
+      ],
+      "relatedKitchenItemIDs": [
+        "fricot",
+        "poutine-rapee"
+      ],
+      "relatedJourneyIDs": [
+        "acadian_peninsula"
+      ],
+      "websiteURL": "https://festivalacadien.ca/",
+      "sourceURLs": [
+        "https://festivalacadien.ca/",
+        "https://tourismnewbrunswick.ca/festivals-events/festival-acadien-de-caraquet"
+      ],
+      "verificationStatus": "verified",
+      "lastVerified": "2026-05-30",
+      "confidence": "high",
+      "isFeatured": true,
+      "isActive": true
+    },
+    {
+      "id": "pays-de-la-sagouine-program-2026",
+      "name": "Le Pays de la Sagouine 2026 Program",
+      "category": "performance",
+      "regionID": "southeastern_new_brunswick",
+      "placeID": "bouctouche",
+      "townOrCommunity": "Bouctouche",
+      "provinceOrState": "New Brunswick",
+      "country": "Canada",
+      "dateLabel": {
+        "en": "2026 summer program",
+        "fr-CA": "Programmation estivale 2026"
+      },
+      "seasonLabel": {
+        "en": "Summer",
+        "fr-CA": "Été"
+      },
+      "shortDescription": {
+        "en": "Seasonal Acadian theatre, music, comedy, and site programming at the world of La Sagouine.",
+        "fr-CA": "Théâtre, musique, humour et programmation saisonnière acadiens dans l'univers de La Sagouine."
+      },
+      "whyItBelongs": {
+        "en": "It adds a living-performance layer to the discovery catalog, connecting language, food, humour, and contemporary Acadian culture.",
+        "fr-CA": "Il ajoute une couche de spectacle vivant au catalogue de découverte, reliant langue, cuisine, humour et culture acadienne actuelle."
+      },
+      "relatedDiscoveryEntryIDs": [
+        "le-pays-de-la-sagouine"
+      ],
+      "relatedKitchenItemIDs": [
+        "fricot",
+        "pets-de-soeur"
+      ],
+      "relatedJourneyIDs": [
+        "shared_acadian_threads"
+      ],
+      "websiteURL": "https://sagouine.com/en/program",
+      "sourceURLs": [
+        "https://sagouine.com/en/program",
+        "https://sagouine.com/fr/"
+      ],
+      "verificationStatus": "verified",
+      "lastVerified": "2026-05-30",
+      "confidence": "high",
+      "isFeatured": true,
+      "isActive": true
+    }
+  ]
 }

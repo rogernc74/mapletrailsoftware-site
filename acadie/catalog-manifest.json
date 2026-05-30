@@ -5,19 +5,19 @@
     "discovery": {
       "version": 1,
       "url": "https://mapletrailsoftware.com/acadie/discovery-catalog.json",
-      "sha256": null,
+      "sha256": "027aeac1055bc1a7cc583c15aca1826dcc4f5b2b0686222db43745f94ba2a296",
       "requiredAppVersion": null
     },
     "events": {
-      "version": 1,
+      "version": 2,
       "url": "https://mapletrailsoftware.com/acadie/events-catalog.json",
-      "sha256": null,
+      "sha256": "803557f0f13f14f1c89bf690f0a25187648f156751cf20a3eae5573589176d80",
       "requiredAppVersion": null
     },
     "foodTrails": {
-      "version": 1,
+      "version": 2,
       "url": "https://mapletrailsoftware.com/acadie/food-trails-catalog.json",
-      "sha256": null,
+      "sha256": "6b008a799573c510a5d86e1c922190ed66269ba76c9104fdada231c79540cf24",
       "requiredAppVersion": null
     }
   }

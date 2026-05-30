@@ -1,6 +1,120 @@
 {
   "schemaVersion": 1,
-  "version": 1,
+  "version": 2,
   "updatedAt": "2026-05-30T00:00:00Z",
-  "trails": []
+  "trails": [
+    {
+      "id": "cheticamp-coastal-kitchen",
+      "name": {
+        "en": "Chéticamp Coastal Kitchen",
+        "fr-CA": "Cuisine côtière de Chéticamp"
+      },
+      "regionIDs": [
+        "cheticamp_cape_breton"
+      ],
+      "placeIDs": [
+        "cheticamp"
+      ],
+      "discoveryEntryIDs": [
+        "aucoin-bakery",
+        "les-trois-pignons"
+      ],
+      "kitchenItemIDs": [
+        "rapure-rappie-pie",
+        "seafood-coastal-food"
+      ],
+      "summary": {
+        "en": "A food-and-culture route pairing Chéticamp bakery stops, coastal dishes, rug-hooking heritage, and Cape Breton Acadian identity.",
+        "fr-CA": "Un parcours de cuisine et de culture reliant les arrêts boulangers de Chéticamp, les plats côtiers, le tapis houqué et l'identité acadienne du Cap-Breton."
+      },
+      "routeHint": {
+        "en": "Start near Chéticamp, pair a bakery stop with Les Trois Pignons, then connect the visit to coastal Acadian food traditions.",
+        "fr-CA": "Commencez près de Chéticamp, jumelez un arrêt à la boulangerie avec Les Trois Pignons, puis reliez la visite aux traditions culinaires acadiennes côtières."
+      },
+      "sourceURLs": [
+        "https://www.aucoinbakery.com/en/index.php",
+        "https://www.lestroispignons.com/"
+      ],
+      "verificationStatus": "verified",
+      "lastVerified": "2026-05-30",
+      "confidence": "high",
+      "isFeatured": true,
+      "isActive": true
+    },
+    {
+      "id": "acadian-peninsula-festival-table",
+      "name": {
+        "en": "Acadian Peninsula Festival Table",
+        "fr-CA": "Table festive de la Péninsule acadienne"
+      },
+      "regionIDs": [
+        "acadian_peninsula"
+      ],
+      "placeIDs": [
+        "caraquet"
+      ],
+      "discoveryEntryIDs": [
+        "village-historique-acadien",
+        "festival-acadien-caraquet"
+      ],
+      "kitchenItemIDs": [
+        "fricot",
+        "poutine-rapee"
+      ],
+      "summary": {
+        "en": "A seasonal route around Caraquet that connects living history, festival gathering, fricot, and poutines râpées.",
+        "fr-CA": "Un parcours saisonnier autour de Caraquet qui relie histoire vivante, rassemblement festivalier, fricot et poutines râpées."
+      },
+      "routeHint": {
+        "en": "Use Caraquet as the base, connect the Village Historique Acadien with festival-season stops, and treat food as part of the heritage story.",
+        "fr-CA": "Utilisez Caraquet comme point d'ancrage, reliez le Village Historique Acadien aux arrêts de la saison des festivals et abordez la cuisine comme une partie du récit patrimonial."
+      },
+      "sourceURLs": [
+        "https://villagehistoriqueacadien.com/",
+        "https://festivalacadien.ca/"
+      ],
+      "verificationStatus": "verified",
+      "lastVerified": "2026-05-30",
+      "confidence": "high",
+      "isFeatured": true,
+      "isActive": true
+    },
+    {
+      "id": "bouctouche-theatre-and-kitchen",
+      "name": {
+        "en": "Bouctouche Theatre & Kitchen",
+        "fr-CA": "Théâtre et cuisine de Bouctouche"
+      },
+      "regionIDs": [
+        "southeastern_new_brunswick"
+      ],
+      "placeIDs": [
+        "bouctouche"
+      ],
+      "discoveryEntryIDs": [
+        "le-pays-de-la-sagouine"
+      ],
+      "kitchenItemIDs": [
+        "fricot",
+        "pets-de-soeur"
+      ],
+      "summary": {
+        "en": "A cultural stop that pairs Acadian performance, language, hospitality, and familiar kitchen traditions in Bouctouche.",
+        "fr-CA": "Un arrêt culturel qui marie spectacle acadien, langue, accueil et traditions culinaires familières à Bouctouche."
+      },
+      "routeHint": {
+        "en": "Plan around the Le Pays de la Sagouine program, then connect the visit to fricot, sweets, and southeastern New Brunswick culture.",
+        "fr-CA": "Planifiez autour de la programmation du Pays de la Sagouine, puis reliez la visite au fricot, aux douceurs et à la culture du sud-est du Nouveau-Brunswick."
+      },
+      "sourceURLs": [
+        "https://sagouine.com/en/program",
+        "https://sagouine.com/fr/"
+      ],
+      "verificationStatus": "verified",
+      "lastVerified": "2026-05-30",
+      "confidence": "high",
+      "isFeatured": false,
+      "isActive": true
+    }
+  ]
 }
