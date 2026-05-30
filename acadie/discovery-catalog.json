@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "updatedAt": "2026-05-30T00:00:00Z",
+  "entries": [
+    {
+      "id": "aucoin-bakery",
+      "name": "Aucoin Bakery",
+      "category": "bakery_cafe",
+      "regionID": "cheticamp_cape_breton",
+      "placeID": "cheticamp",
+      "townOrCommunity": "Petit Étang / Chéticamp",
+      "provinceOrState": "Nova Scotia",
+      "country": "Canada",
+      "shortDescription": {
+        "en": "A family bakery near Chéticamp offering breads, pastries, sandwiches, and Acadian-style meat pies.",
+        "fr-CA": "Une boulangerie familiale près de Chéticamp offrant pains, pâtisseries, sandwichs et pâtés à la viande de style acadien."
+      },
+      "whyItBelongs": {
+        "en": "A practical food stop connected to Chéticamp, the Cabot Trail, and Nova Scotia Acadian culture.",
+        "fr-CA": "Un arrêt gourmand lié à Chéticamp, à la piste Cabot et à la culture acadienne de la Nouvelle-Écosse."
+      },
+      "relatedKitchenItemIDs": [
+        "rapure-rappie-pie",
+        "seafood-coastal-food"
+      ],
+      "relatedJourneyIDs": [
+        "shared_acadian_threads"
+      ],
+      "relatedStoryIDs": [],
+      "websiteURL": "https://www.aucoinbakery.com/en/index.php",
+      "sourceURLs": [
+        "https://www.aucoinbakery.com/en/index.php"
+      ],
+      "verificationStatus": "verified",
+      "lastVerified": "2026-05-30",
+      "confidence": "high",
+      "isFeatured": true,
+      "isActive": true
+    },
+    {
+      "id": "village-historique-acadien",
+      "name": "Village Historique Acadien",
+      "category": "living_history",
+      "regionID": "acadian_peninsula",
+      "placeID": "caraquet",
+      "townOrCommunity": "Rivière-du-Nord / Caraquet area",
+      "provinceOrState": "New Brunswick",
+      "country": "Canada",
+      "shortDescription": {
+        "en": "A living-history village presenting Acadian life through historic buildings, interpretation, and cultural programming.",
+        "fr-CA": "Un village d'histoire vivante qui présente la vie acadienne grâce à des bâtiments historiques, à l'interprétation et à une programmation culturelle."
+      },
+      "whyItBelongs": {
+        "en": "It is one of the clearest travel-guide anchors for understanding Acadian daily life, craft, architecture, and continuity in New Brunswick.",
+        "fr-CA": "C'est l'un des repères les plus utiles pour comprendre la vie quotidienne, les métiers, l'architecture et la continuité acadienne au Nouveau-Brunswick."
+      },
+      "relatedKitchenItemIDs": [
+        "fricot",
+        "poutine-rapee"
+      ],
+      "relatedJourneyIDs": [
+        "acadian_peninsula"
+      ],
+      "relatedStoryIDs": [],
+      "websiteURL": "https://villagehistoriqueacadien.com/",
+      "sourceURLs": [
+        "https://villagehistoriqueacadien.com/"
+      ],
+      "verificationStatus": "verified",
+      "lastVerified": "2026-05-30",
+      "confidence": "high",
+      "isFeatured": true,
+      "isActive": true
+    },
+    {
+      "id": "le-pays-de-la-sagouine",
+      "name": "Le Pays de la Sagouine",
+      "category": "cultural_centre",
+      "regionID": "southeastern_new_brunswick",
+      "placeID": "bouctouche",
+      "townOrCommunity": "Bouctouche",
+      "provinceOrState": "New Brunswick",
+      "country": "Canada",
+      "shortDescription": {
+        "en": "A cultural destination built around Acadian theatre, music, food, language, and the world of La Sagouine.",
+        "fr-CA": "Une destination culturelle autour du théâtre, de la musique, de la cuisine, de la langue acadienne et de l'univers de La Sagouine."
+      },
+      "whyItBelongs": {
+        "en": "It connects visitors to modern Acadian performance, humour, language, and hospitality in southeastern New Brunswick.",
+        "fr-CA": "Le lieu relie les visiteurs au spectacle, à l'humour, à la langue et à l'accueil acadiens d'aujourd'hui dans le sud-est du Nouveau-Brunswick."
+      },
+      "relatedKitchenItemIDs": [
+        "fricot",
+        "pets-de-soeur"
+      ],
+      "relatedJourneyIDs": [
+        "shared_acadian_threads"
+      ],
+      "relatedStoryIDs": [],
+      "websiteURL": "https://sagouine.com/fr/notre-univers/le-pays-de-la-sagouine",
+      "sourceURLs": [
+        "https://sagouine.com/fr/notre-univers/le-pays-de-la-sagouine"
+      ],
+      "verificationStatus": "verified",
+      "lastVerified": "2026-05-30",
+      "confidence": "high",
+      "isFeatured": true,
+      "isActive": true
+    },
+    {
+      "id": "les-trois-pignons",
+      "name": "Les Trois Pignons",
+      "category": "museum",
+      "regionID": "cheticamp_cape_breton",
+      "placeID": "cheticamp",
+      "townOrCommunity": "Chéticamp",
+      "provinceOrState": "Nova Scotia",
+      "country": "Canada",
+      "shortDescription": {
+        "en": "A cultural centre, museum, gallery, genealogy resource, and visitor information stop in Chéticamp.",
+        "fr-CA": "Un centre culturel, musée, galerie, ressource généalogique et point d'information touristique à Chéticamp."
+      },
+      "whyItBelongs": {
+        "en": "It is a strong Chéticamp anchor for Acadian identity, rug hooking, family history, and travel orientation.",
+        "fr-CA": "C'est un repère important de Chéticamp pour l'identité acadienne, le tapis houqué, l'histoire familiale et l'orientation des visiteurs."
+      },
+      "relatedKitchenItemIDs": [
+        "rapure-rappie-pie",
+        "seafood-coastal-food"
+      ],
+      "relatedJourneyIDs": [
+        "shared_acadian_threads"
+      ],
+      "relatedStoryIDs": [],
+      "websiteURL": "https://www.lestroispignons.com/",
+      "sourceURLs": [
+        "https://www.lestroispignons.com/"
+      ],
+      "verificationStatus": "verified",
+      "lastVerified": "2026-05-30",
+      "confidence": "high",
+      "isFeatured": false,
+      "isActive": true
+    },
+    {
+      "id": "acadian-museum-pei",
+      "name": "Acadian Museum / Musée acadien",
+      "category": "museum",
+      "regionID": "prince_edward_island",
+      "placeID": "miscouche",
+      "townOrCommunity": "Miscouche",
+      "provinceOrState": "Prince Edward Island",
+      "country": "Canada",
+      "shortDescription": {
+        "en": "A PEI Museum and Heritage Foundation site focused on Acadian history, culture, and community memory on Prince Edward Island.",
+        "fr-CA": "Un site de la PEI Museum and Heritage Foundation consacré à l'histoire, à la culture et à la mémoire communautaire acadiennes à l'Île-du-Prince-Édouard."
+      },
+      "whyItBelongs": {
+        "en": "It gives the discovery catalog an Island Acadian anchor and complements the app's regional heritage material.",
+        "fr-CA": "Il donne au catalogue de découverte un repère acadien insulaire et complète le contenu patrimonial régional de l'app."
+      },
+      "relatedKitchenItemIDs": [],
+      "relatedJourneyIDs": [
+        "shared_acadian_threads"
+      ],
+      "relatedStoryIDs": [],
+      "websiteURL": "https://www.tourismpei.com/attractions/acadian-museummusee-acadien",
+      "sourceURLs": [
+        "https://www.tourismpei.com/attractions/acadian-museummusee-acadien"
+      ],
+      "verificationStatus": "verified",
+      "lastVerified": "2026-05-30",
+      "confidence": "high",
+      "isFeatured": false,
+      "isActive": true
+    },
+    {
+      "id": "festival-acadien-caraquet",
+      "name": "Festival acadien de Caraquet",
+      "category": "festival",
+      "regionID": "acadian_peninsula",
+      "placeID": "caraquet",
+      "townOrCommunity": "Caraquet",
+      "provinceOrState": "New Brunswick",
+      "country": "Canada",
+      "shortDescription": {
+        "en": "A major Acadian festival in Caraquet, closely associated with National Acadian Day and the Tintamarre tradition.",
+        "fr-CA": "Un grand festival acadien à Caraquet, étroitement lié à la Fête nationale de l'Acadie et à la tradition du Tintamarre."
+      },
+      "whyItBelongs": {
+        "en": "It is a seasonal discovery stop for visitors looking for living Acadian celebration, music, community, and public gathering.",
+        "fr-CA": "C'est un arrêt saisonnier pour les visiteurs qui cherchent la fête acadienne vivante, la musique, la communauté et le rassemblement public."
+      },
+      "relatedKitchenItemIDs": [
+        "fricot"
+      ],
+      "relatedJourneyIDs": [
+        "acadian_peninsula"
+      ],
+      "relatedStoryIDs": [],
+      "websiteURL": "https://caraquet.ca/en/visitors",
+      "sourceURLs": [
+        "https://caraquet.ca/en/visitors"
+      ],
+      "verificationStatus": "verified",
+      "lastVerified": "2026-05-30",
+      "confidence": "medium",
+      "isFeatured": false,
+      "isActive": true
+    }
+  ]
+}
