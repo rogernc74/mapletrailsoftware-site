@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-05-30T00:00:00Z",
+  "updatedAt": "2026-06-02T00:00:00Z",
   "catalogs": {
     "discovery": {
-      "version": 2,
+      "version": 4,
       "url": "https://mapletrailsoftware.com/acadie/discovery-catalog.json",
-      "sha256": "c448f540313524524f7ccd623de4bffb7d0e9ce3c4a0a31337e72f11b63a37c8",
+      "sha256": "eaabd4f3aedf458a38d31ee0f158ae0b3df7c815ba45d56c0161e1cbffe6a4dc",
       "requiredAppVersion": null
     },
     "events": {

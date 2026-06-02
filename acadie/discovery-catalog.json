@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": 2,
-  "updatedAt": "2026-05-30T00:00:00Z",
+  "version": 4,
+  "updatedAt": "2026-06-02T00:00:00Z",
   "entries": [
     {
       "id": "aucoin-bakery",
@@ -11,8 +11,9 @@
       "regionIDs": [
         "cheticamp_cape_breton"
       ],
-      "placeID": "cheticamp",
+      "placeID": "aucoin-bakery",
       "placeIDs": [
+        "aucoin-bakery",
         "cheticamp"
       ],
       "townOrCommunity": "Petit Étang / Chéticamp",
@@ -42,6 +43,86 @@
       "verificationStatus": "verified",
       "lastVerified": "2026-05-30",
       "confidence": "high",
+      "isFeatured": true,
+      "isActive": true
+    },
+    {
+      "id": "boulangerie-grains-de-folie",
+      "name": "Boulangerie Grains de Folie",
+      "category": "bakery_cafe",
+      "regionID": "acadian_peninsula",
+      "regionIDs": [
+        "acadian_peninsula"
+      ],
+      "placeID": "boulangerie-grains-de-folie",
+      "placeIDs": [
+        "boulangerie-grains-de-folie",
+        "caraquet",
+        "village-historique-acadien"
+      ],
+      "townOrCommunity": "Caraquet",
+      "provinceOrState": "New Brunswick",
+      "country": "Canada",
+      "shortDescription": {
+        "en": "A bakery, café, and cultural stop in Caraquet with pastries, coffee, local products, music, and an artistic atmosphere.",
+        "fr-CA": "Une boulangerie, un café et un arrêt culturel à Caraquet avec pâtisseries, café, produits locaux, musique et atmosphère artistique."
+      },
+      "whyItBelongs": {
+        "en": "It connects Acadian Peninsula food discovery with everyday gathering, local products, and Caraquet cultural life.",
+        "fr-CA": "Il relie la découverte culinaire de la Péninsule acadienne aux rassemblements du quotidien, aux produits locaux et à la vie culturelle de Caraquet."
+      },
+      "relatedKitchenItemIDs": [
+        "pets-de-soeur"
+      ],
+      "relatedJourneyIDs": [
+        "acadian_peninsula"
+      ],
+      "relatedStoryIDs": [],
+      "relatedNameIDs": [],
+      "sourceURLs": [],
+      "verificationStatus": "needsVerification",
+      "lastVerified": "2026-05-30",
+      "confidence": "medium",
+      "isFeatured": true,
+      "isActive": true
+    },
+    {
+      "id": "chez-memere-poutine-rapee",
+      "name": "Chez Mémère Poutine & Rapée",
+      "category": "restaurant",
+      "regionID": "southeastern_nb",
+      "regionIDs": [
+        "southeastern_nb"
+      ],
+      "placeID": "chez-memere-poutine-rapee",
+      "placeIDs": [
+        "chez-memere-poutine-rapee"
+      ],
+      "townOrCommunity": "Moncton",
+      "provinceOrState": "New Brunswick",
+      "country": "Canada",
+      "shortDescription": {
+        "en": "A local stop associated with Acadian comfort foods such as poutine râpée, râpure or rapée, and fricot.",
+        "fr-CA": "Un arrêt local associé aux plats réconfortants acadiens comme la poutine râpée, la râpure ou rapée et le fricot."
+      },
+      "whyItBelongs": {
+        "en": "It gives the guide a practical modern food stop for people exploring Acadian comfort-food traditions around Moncton.",
+        "fr-CA": "Il donne au guide un arrêt gourmand moderne et pratique pour explorer les traditions de plats réconfortants acadiens autour de Moncton."
+      },
+      "relatedKitchenItemIDs": [
+        "poutine-rapee",
+        "chicken-fricot",
+        "rapure-rappie-pie"
+      ],
+      "relatedJourneyIDs": [
+        "shared_acadian_threads"
+      ],
+      "relatedStoryIDs": [],
+      "relatedNameIDs": [],
+      "sourceURLs": [],
+      "verificationStatus": "needsVerification",
+      "lastVerified": "2026-05-30",
+      "confidence": "medium",
       "isFeatured": true,
       "isActive": true
     },
@@ -246,6 +327,216 @@
         "https://caraquet.ca/en/visitors"
       ],
       "verificationStatus": "verified",
+      "lastVerified": "2026-05-30",
+      "confidence": "medium",
+      "isFeatured": false,
+      "isActive": true
+    },
+    {
+      "id": "la-cuisine-robicheau",
+      "name": "La Cuisine Robicheau",
+      "category": "restaurant",
+      "regionID": "clare_nova_scotia",
+      "regionIDs": [
+        "clare_nova_scotia"
+      ],
+      "placeID": "la-cuisine-robicheau",
+      "placeIDs": [
+        "la-cuisine-robicheau",
+        "clare-ns"
+      ],
+      "townOrCommunity": "Saulnierville",
+      "provinceOrState": "Nova Scotia",
+      "country": "Canada",
+      "shortDescription": {
+        "en": "A Baie Sainte-Marie restaurant in Saulnierville focused on local seafood and homestyle food.",
+        "fr-CA": "Un restaurant de la Baie Sainte-Marie, à Saulnierville, axé sur les fruits de mer locaux et la cuisine maison."
+      },
+      "whyItBelongs": {
+        "en": "It gives the remote discovery layer a practical Clare food stop tied to seafood, local foodways, and Baie Sainte-Marie community life.",
+        "fr-CA": "Il donne à la couche de découverte à distance un arrêt gourmand pratique en Clare, lié aux fruits de mer, aux traditions alimentaires locales et à la vie communautaire de la Baie Sainte-Marie."
+      },
+      "relatedKitchenItemIDs": [
+        "rapure-rappie-pie",
+        "seafood-coastal-food",
+        "chicken-fricot"
+      ],
+      "relatedJourneyIDs": [
+        "shared_acadian_threads"
+      ],
+      "relatedStoryIDs": [
+        "clare_french_on_the_atlantic_edge"
+      ],
+      "relatedNameIDs": [],
+      "websiteURL": "https://www.lacuisinerobicheau.ca/",
+      "sourceURLs": [
+        "https://www.lacuisinerobicheau.ca/"
+      ],
+      "verificationStatus": "verified",
+      "lastVerified": "2026-06-02",
+      "confidence": "high",
+      "isFeatured": true,
+      "isActive": true
+    },
+    {
+      "id": "pain-dla-baie",
+      "name": "Pain D'La Baie",
+      "category": "bakery_cafe",
+      "regionID": "clare_nova_scotia",
+      "regionIDs": [
+        "clare_nova_scotia"
+      ],
+      "placeID": "pain-dla-baie",
+      "placeIDs": [
+        "pain-dla-baie",
+        "clare-ns"
+      ],
+      "townOrCommunity": "Saulnierville",
+      "provinceOrState": "Nova Scotia",
+      "country": "Canada",
+      "shortDescription": {
+        "en": "A Saulnierville bakery seed for the Clare food-discovery layer.",
+        "fr-CA": "Une piste de boulangerie à Saulnierville pour la couche de découverte culinaire de Clare."
+      },
+      "whyItBelongs": {
+        "en": "It may broaden Clare discovery beyond museums and villages, but it should remain verification-labeled until official or local sources confirm current details and heritage relevance.",
+        "fr-CA": "Elle peut élargir la découverte de Clare au-delà des musées et des villages, mais elle doit rester marquée comme à vérifier jusqu'à ce que des sources officielles ou locales confirment les détails actuels et la pertinence patrimoniale."
+      },
+      "relatedKitchenItemIDs": [
+        "rapure-rappie-pie"
+      ],
+      "relatedJourneyIDs": [
+        "shared_acadian_threads"
+      ],
+      "relatedStoryIDs": [
+        "clare_french_on_the_atlantic_edge"
+      ],
+      "relatedNameIDs": [],
+      "sourceURLs": [
+        "https://www.profilecanada.com/companydetail.cfm?company=2332276_Pain_DLa_Baie_Saulnierville_NS"
+      ],
+      "verificationStatus": "needsVerification",
+      "lastVerified": "2026-06-02",
+      "confidence": "low",
+      "isFeatured": false,
+      "isActive": true
+    },
+    {
+      "id": "doucet-house-acadian-meal",
+      "name": "Experiential Traditional Acadian Meal - Doucet House",
+      "category": "food_experience",
+      "regionID": "evangeline_western_pei",
+      "regionIDs": [
+        "evangeline_western_pei"
+      ],
+      "placeID": "doucet-house-acadian-meal",
+      "placeIDs": [
+        "doucet-house-acadian-meal",
+        "acadian-museum-pei"
+      ],
+      "townOrCommunity": "Rustico",
+      "provinceOrState": "Prince Edward Island",
+      "country": "Canada",
+      "shortDescription": {
+        "en": "A traditional Acadian meal experience associated with the 1772 Doucet House, with foods such as fricot, rapure, seafood, and meat pie.",
+        "fr-CA": "Une expérience de repas acadien traditionnel associée à la Maison Doucet de 1772, avec des plats comme le fricot, la râpure, les fruits de mer et le pâté à la viande."
+      },
+      "whyItBelongs": {
+        "en": "It belongs in remote discovery because schedule, availability, booking details, and operator information are current travel details rather than bundled heritage data.",
+        "fr-CA": "Elle relève de la découverte à distance parce que l'horaire, les disponibilités, les réservations et les détails de l'organisateur sont des renseignements de voyage actuels, pas des données patrimoniales intégrées."
+      },
+      "relatedKitchenItemIDs": [
+        "chicken-fricot",
+        "rapure-rappie-pie",
+        "seafood-coastal-food"
+      ],
+      "relatedJourneyIDs": [
+        "shared_acadian_threads"
+      ],
+      "relatedStoryIDs": [],
+      "relatedNameIDs": [],
+      "sourceURLs": [],
+      "verificationStatus": "needsVerification",
+      "lastVerified": "2026-05-30",
+      "confidence": "medium",
+      "isFeatured": false,
+      "isActive": true
+    },
+    {
+      "id": "cajun-food-tours",
+      "name": "Cajun Food Tours",
+      "category": "food_experience",
+      "regionID": "acadiana",
+      "regionIDs": [
+        "acadiana"
+      ],
+      "placeID": "cajun-food-tours",
+      "placeIDs": [
+        "cajun-food-tours",
+        "lafayette-la",
+        "vermilionville"
+      ],
+      "townOrCommunity": "Lafayette",
+      "provinceOrState": "Louisiana",
+      "country": "United States",
+      "shortDescription": {
+        "en": "A food tour experience introducing visitors to Cajun flavours and Acadiana culture.",
+        "fr-CA": "Une expérience de visite gourmande qui initie les visiteurs aux saveurs cajuns et à la culture de l'Acadiana."
+      },
+      "whyItBelongs": {
+        "en": "It can support a future Acadiana food trail, but current tour format and booking details belong in remote discovery.",
+        "fr-CA": "Elle peut soutenir un futur parcours gourmand de l'Acadiana, mais le format actuel des visites et les détails de réservation relèvent de la découverte à distance."
+      },
+      "relatedKitchenItemIDs": [
+        "cajun-gumbo-louisiana"
+      ],
+      "relatedJourneyIDs": [
+        "shared_acadian_threads"
+      ],
+      "relatedStoryIDs": [],
+      "relatedNameIDs": [],
+      "sourceURLs": [],
+      "verificationStatus": "needsVerification",
+      "lastVerified": "2026-05-30",
+      "confidence": "medium",
+      "isFeatured": false,
+      "isActive": true
+    },
+    {
+      "id": "blue-moon-saloon",
+      "name": "Blue Moon Saloon",
+      "category": "music_venue",
+      "regionID": "acadiana",
+      "regionIDs": [
+        "acadiana"
+      ],
+      "placeID": "blue-moon-saloon",
+      "placeIDs": [
+        "blue-moon-saloon",
+        "lafayette-la",
+        "vermilionville"
+      ],
+      "townOrCommunity": "Lafayette",
+      "provinceOrState": "Louisiana",
+      "country": "United States",
+      "shortDescription": {
+        "en": "A Lafayette live-music venue associated with Cajun music and local culture.",
+        "fr-CA": "Une salle de musique à Lafayette associée à la musique cajun et à la culture locale."
+      },
+      "whyItBelongs": {
+        "en": "It is a living-culture discovery stop; event calendars, hours, and current operation should update remotely rather than through an app release.",
+        "fr-CA": "C'est un arrêt de découverte de culture vivante; les calendriers, les heures et l'état actuel des activités doivent être mis à jour à distance plutôt que par une version de l'app."
+      },
+      "relatedKitchenItemIDs": [
+        "cajun-gumbo-louisiana"
+      ],
+      "relatedJourneyIDs": [
+        "shared_acadian_threads"
+      ],
+      "relatedStoryIDs": [],
+      "relatedNameIDs": [],
+      "sourceURLs": [],
+      "verificationStatus": "needsVerification",
       "lastVerified": "2026-05-30",
       "confidence": "medium",
       "isFeatured": false,
