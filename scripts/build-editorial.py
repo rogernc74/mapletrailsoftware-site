@@ -14,7 +14,7 @@ def img(src,alt='',cls='',lazy=True):
     return f'<img src="{src}" alt="{escape(alt)}" class="{cls}" width="{w}" height="{h}" {"loading=\"lazy\"" if lazy else "fetchpriority=\"high\""} decoding="async">'
 
 def brand():
-    return '<a class="editorial-brand" href="/" aria-label="MapleTrail Software Inc. home">'+img('/images/editorial/mapletrail-lockup.png','MapleTrail Software logo','',False)+'</a>'
+    return '<a class="editorial-brand" href="/" aria-label="MapleTrail Software Inc. home">'+img('/images/editorial/mapletrail-lockup.png','MapleTrail Software Inc. logo','',False)+'</a>'
 
 def header(fr=False,acadie=False,suffix=""):
     links=''.join(f'<a href="/{k}/">{v}</a>' for k,v in NAMES.items())

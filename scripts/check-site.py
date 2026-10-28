@@ -27,7 +27,7 @@ for p in files:
  if re.search(r'coming soon|will carry over to Mac|Apple-first',s.get_text(),re.I):errors.append(f'{p}: obsolete positioning/release copy')
  for m in s.select('meta[content]'):
   if re.search(r'coming soon|Apple-first',m['content'],re.I):errors.append(f'{p}: stale metadata')
-# All preexisting legal/support main text must remain unchanged.
+# Preserve legal/support text, allowing only Roger’s company-name correction.
 import subprocess
 legal=[]
 for p in files:
@@ -36,7 +36,10 @@ for p in files:
   if rel=='acadie/fr-CA/index.html':continue
   old=BeautifulSoup(subprocess.check_output(['git','show','b8eb850:'+rel]),'html.parser')
   new=BeautifulSoup(p.read_text(),'html.parser')
-  if old.main.get_text(' ',strip=True)!=new.main.get_text(' ',strip=True):errors.append(rel+': legal/support main text changed')
+  if re.sub(r'MapleTrail Software(?! Inc\.)','MapleTrail Software Inc.',old.main.get_text(' ',strip=True)).replace('MapleTrail Software Inc..','MapleTrail Software Inc.')!=new.main.get_text(' ',strip=True):errors.append(rel+': legal/support main text changed')
   legal.append(rel)
+from PIL import Image
+for og in (root/'images/og').glob('*.jpg'):
+ if Image.open(og).size!=(1200,630):errors.append(f'{og}: expected 1200x630 sharing card')
 result={'html_pages':len(files),'local_references_checked':links,'images_checked':images,'legal_support_bodies_preserved':len(legal),'errors':errors,'result':'passed' if not errors else 'failed'}
 print(json.dumps(result,indent=2,ensure_ascii=False));sys.exit(bool(errors))
