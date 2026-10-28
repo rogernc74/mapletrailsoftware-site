@@ -1,125 +1,166 @@
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MapleTrail Software Inc.</title>
-  <meta name="description" content="MapleTrail Software Inc. is an independent software company. Explore Moments Later, Moments Away, If Needed, and Acadie." />
+  <meta name="description" content="MapleTrail Software Inc. is an independent, Apple-first software company. Explore Moments Later, Habit Wallet, Moments Away, If Needed, and Acadie." />
+  <link rel="canonical" href="https://mapletrailsoftware.com/" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/images/favicon-48.png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MapleTrail Software" />
+  <meta property="og:locale" content="en_CA" />
+  <meta property="og:title" content="MapleTrail Software Inc." />
+  <meta property="og:description" content="MapleTrail Software Inc. is an independent, Apple-first software company. Explore Moments Later, Habit Wallet, Moments Away, If Needed, and Acadie." />
+  <meta property="og:url" content="https://mapletrailsoftware.com/" />
+  <meta property="og:image" content="https://mapletrailsoftware.com/images/og/mapletrail.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
-<body>
+<body class="home">
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="/">
-        <img src="/images/mapletrail-logo.png" alt="MapleTrail Software logo" />
+        <img src="/images/mapletrail-logo.png" alt="MapleTrail Software logo" width="64" height="64" />
         <div>
           <div class="brand-title">MapleTrail Software Inc.</div>
           <div class="brand-sub">Thoughtful software</div>
         </div>
       </a>
-      <nav class="nav">
-        <div class="nav-dropdown">
-          <button class="nav-trigger" type="button" aria-haspopup="true">Products</button>
-          <div class="nav-menu">
-            <a href="/habitwallet/">Habit Wallet</a>
-            <a href="/momentslater/">Moments Later</a>
-            <a href="/momentsaway/">Moments Away</a>
-            <a href="/ifneeded/">If Needed</a>
-            <a href="/acadie/">Acadie</a>
-          </div>
-        </div>
+      <nav class="nav" aria-label="Main">
+        <a href="#apps">Apps</a>
         <a href="#about">About</a>
         <a href="/support/">Support</a>
       </nav>
+      <a class="btn btn-dark home-header-cta" href="#contact">Get in touch</a>
     </div>
   </header>
 
   <main>
-    <section class="company-hero">
-      <div class="container company-layout">
-        <div>
+    <section class="home-hero">
+      <div class="container home-hero-inner">
+        <div class="home-hero-copy">
           <span class="badge">Independent software studio • Apple-first products</span>
-          <h1 style="margin:22px 0 0;font-size:clamp(2.8rem,5.2vw,4.8rem);line-height:1.04;letter-spacing:-.045em;">
+          <h1>
             Software for the moments, places,
-            <span style="display:block;color:var(--accent);">and details worth keeping.</span>
+            <span>and details worth keeping.</span>
           </h1>
-          <p class="lead" style="max-width:760px;">
-            MapleTrail Software builds independent apps for memory, travel records, practical
-            handoff planning, and Acadian cultural discovery. Each product is shaped to be clear
-            enough for everyday use and durable enough to keep returning to.
+          <p class="lead">
+            MapleTrail Software builds independent apps for memory, everyday habits, travel records,
+            practical handoff planning, and Acadian cultural discovery. Each one is clear enough for
+            everyday use and durable enough to keep returning to.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#products">Browse products</a>
-            <a class="btn btn-light" href="mailto:support@mapletrailsoftware.com?subject=MapleTrail%20Software">Email MapleTrail</a>
+            <a class="btn btn-primary" href="#apps">Explore the apps</a>
+            <a class="btn btn-light" href="#contact">Get in touch</a>
           </div>
+          <ul class="home-hero-icons" aria-label="Our apps">
+            <li><a class="dot-later" href="/momentslater/">Moments Later</a></li>
+            <li><a class="dot-wallet" href="/habitwallet/">Habit Wallet</a></li>
+            <li><a class="dot-away" href="/momentsaway/">Moments Away</a></li>
+            <li><a class="dot-ifneeded" href="/ifneeded/">If Needed</a></li>
+            <li><a class="dot-acadie" href="/acadie/">Acadie</a></li>
+          </ul>
         </div>
 
-        <div class="card company-card">
-          <img class="company-mark" src="/images/mapletrail-logo.png" alt="MapleTrail mark" />
-          <h2 style="margin:20px 0 0;font-size:2rem;letter-spacing:-.03em;">Products</h2>
-          <p style="margin:14px 0 0;color:var(--muted);font-size:1.04rem;line-height:1.75;">
-            Acadie is a bilingual cultural guide for cinematic stories, heritage trails, communities,
-            events, food traditions, family names, and personal roots through memory.
-          </p>
-          <div class="product-peek">
-            <img src="/images/acadie/home-app-2026.jpg" alt="Current Acadie app screenshot." />
-          </div>
-          <div style="margin-top:22px;">
-            <a class="btn btn-dark" href="/acadie/">Open Acadie page</a>
-          </div>
+        <div class="home-hero-art" aria-hidden="true">
+          <div class="home-glow"></div>
+          <img class="home-phone home-phone-left" src="/images/momentsaway/map.jpg" alt="" />
+          <img class="home-phone home-phone-right" src="/images/acadie/home-app-2026.jpg" alt="" />
+          <img class="home-phone home-phone-center" src="/images/habitwallet/wallet.webp" alt="" />
         </div>
       </div>
     </section>
 
-    <section id="products" class="section">
+    <section id="apps" class="section">
       <div class="container">
         <div class="section-head">
-          <div class="kicker">Products</div>
+          <div class="kicker">On the App Store</div>
           <h2>Small product lineup. Big attention to detail.</h2>
           <p>
-            MapleTrail Software is building a focused lineup of products designed with clarity,
-            restraint, and long-term usefulness in mind. Each release is shaped to feel polished,
-            approachable, and genuinely useful in the middle of real life.
+            A focused set of apps designed with clarity, restraint, and long-term usefulness in mind,
+            each shaped to feel polished and genuinely useful in the middle of real life.
           </p>
         </div>
 
-        <div class="company-links">
-          <a class="card link-card" href="/momentslater/">
-            <h3>Moments Later</h3>
-            <p>Capture now. Reflect later. Save little moments quickly, then revisit them through timeline, journal, context, and achievements.</p>
-            <div class="arrow">Open product page →</div>
-          </a>
+        <div class="home-apps">
+          <article class="home-app home-app-later">
+            <a class="home-app-visual home-app-visual-tile" href="/momentslater/" tabindex="-1" aria-hidden="true">
+              <img src="/images/momentslater/v11-home.webp" alt="" loading="lazy" />
+            </a>
+            <div class="home-app-body">
+              <div class="home-app-meta"><span class="chip chip-live">Available now</span><span>iPhone · Apple Watch</span></div>
+              <h3><a href="/momentslater/">Moments Later</a></h3>
+              <p>Capture now. Reflect later. Save little moments quickly, then revisit them through timeline, journal, context, and achievements.</p>
+              <div class="home-app-actions">
+                <a class="btn btn-dark btn-sm" href="https://apps.apple.com/ca/app/moments-later/id6761868181" target="_blank" rel="noopener">App Store</a>
+                <a class="home-app-more" href="/momentslater/">Learn more →</a>
+              </div>
+            </div>
+          </article>
 
-          <a class="card link-card" href="/habitwallet/">
-            <h3>Habit Wallet</h3>
-            <p>Turn everyday habits into points, save them in one wallet, and spend them on rewards you choose.</p>
-            <div class="arrow">Open product page →</div>
-          </a>
+          <article class="home-app home-app-wallet">
+            <a class="home-app-visual" href="/habitwallet/" tabindex="-1" aria-hidden="true">
+              <img src="/images/habitwallet/wallet.webp" alt="" loading="lazy" />
+            </a>
+            <div class="home-app-body">
+              <div class="home-app-meta"><span class="chip chip-live">Available now</span><span>iPhone</span></div>
+              <h3><a href="/habitwallet/">Habit Wallet</a></h3>
+              <p>Turn everyday habits into points, save them in one wallet, and spend them on rewards you choose.</p>
+              <div class="home-app-actions">
+                <a class="btn btn-dark btn-sm" href="https://apps.apple.com/ca/app/habit-wallet/id6786388267" target="_blank" rel="noopener">App Store</a>
+                <a class="home-app-more" href="/habitwallet/">Learn more →</a>
+              </div>
+            </div>
+          </article>
 
-          <a class="card link-card" href="/momentsaway/">
-            <h3>Moments Away</h3>
-            <p>Save places, visits, notes, photos, videos, and collector stats around where you have been.</p>
-            <div class="arrow">Open product page →</div>
-          </a>
+          <article class="home-app home-app-away">
+            <a class="home-app-visual" href="/momentsaway/" tabindex="-1" aria-hidden="true">
+              <img src="/images/momentsaway/map.jpg" alt="" loading="lazy" />
+            </a>
+            <div class="home-app-body">
+              <div class="home-app-meta"><span class="chip chip-live">Available now</span><span>iPhone</span></div>
+              <h3><a href="/momentsaway/">Moments Away</a></h3>
+              <p>Map where you have been, plan what is next, and keep the places, photos, notes, and stories behind every trip.</p>
+              <div class="home-app-actions">
+                <a class="btn btn-dark btn-sm" href="https://apps.apple.com/ca/app/moments-away/id6765818943" target="_blank" rel="noopener">App Store</a>
+                <a class="home-app-more" href="/momentsaway/">Learn more →</a>
+              </div>
+            </div>
+          </article>
+        </div>
 
-          <a class="card link-card" href="/ifneeded/">
-            <h3>If Needed</h3>
-            <p>Private handoff planning for the practical details someone trusted may need if they ever have to step in.</p>
-            <div class="arrow">Open product page →</div>
-          </a>
+        <div class="kicker home-subkicker">Also from MapleTrail</div>
+        <div class="home-apps home-apps-wide">
+          <article class="home-app home-app-row home-app-ifneeded">
+            <a class="home-app-visual" href="/ifneeded/" tabindex="-1" aria-hidden="true">
+              <img src="/images/ifneeded/my-plan.jpg" alt="" loading="lazy" />
+            </a>
+            <div class="home-app-body">
+              <div class="home-app-meta"><span>iPhone · iPad · Mac</span></div>
+              <h3><a href="/ifneeded/">If Needed</a></h3>
+              <p>Private handoff planning for the practical details someone trusted may need if they ever have to step in.</p>
+              <div class="home-app-actions"><a class="home-app-more" href="/ifneeded/">Learn more →</a></div>
+            </div>
+          </article>
 
-          <a class="card link-card" href="/acadie/">
-            <h3>Acadie</h3>
-            <p>A bilingual cultural guide for cinematic stories, heritage trails, communities, events, food traditions, family names, and personal roots.</p>
-            <div class="arrow">Open product page →</div>
-          </a>
-
-          <a class="card link-card" href="mailto:support@mapletrailsoftware.com?subject=MapleTrail%20Software">
-            <h3>Get in touch</h3>
-            <p>Questions, partnership ideas, or interest in MapleTrail products can be sent directly by email.</p>
-            <div class="arrow">support@mapletrailsoftware.com</div>
-          </a>
+          <article class="home-app home-app-row home-app-acadie">
+            <a class="home-app-visual" href="/acadie/" tabindex="-1" aria-hidden="true">
+              <img src="/images/acadie/home-app-2026.jpg" alt="" loading="lazy" />
+            </a>
+            <div class="home-app-body">
+              <div class="home-app-meta"><span class="chip chip-soon">Coming soon</span><span>iPhone · Android</span></div>
+              <h3><a href="/acadie/">Acadie</a></h3>
+              <p>A bilingual cultural guide for cinematic stories, heritage trails, communities, events, food traditions, family names, and personal roots.</p>
+              <div class="home-app-actions">
+                <a class="home-app-more" href="/acadie/">Learn more →</a>
+                <a class="home-app-more" href="/acadie/fr-CA/" lang="fr-CA">En français →</a>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -129,33 +170,58 @@
         <div>
           <div class="kicker">About MapleTrail</div>
           <h2>Built for products that feel personal, clear, and enduring.</h2>
-          <p style="margin-top:16px;color:var(--muted);font-size:1.06rem;line-height:1.8;">
+          <p class="home-about-copy">
             MapleTrail Software Inc. is an independent software company with an Apple-first focus, strong product
             fundamentals, and a quieter approach to digital experiences. The aim is to ship software
             that feels human, useful, and carefully made.
           </p>
         </div>
 
-        <div class="soft-card">
-          <div class="eyebrow" style="color:rgba(24,35,38,.52);font-size:12px;letter-spacing:.25em;text-transform:uppercase;">What guides the work</div>
-          <ul>
-            <li>Products shaped around real everyday use.</li>
-            <li>Apple-first experiences with room to grow over time.</li>
-            <li>Design that feels calm, warm, and easy to trust.</li>
-            <li>Small details handled with real care.</li>
-          </ul>
+        <ul class="home-principles">
+          <li><strong>Real everyday use</strong><span>Products shaped around the way people actually live.</span></li>
+          <li><strong>Apple-first</strong><span>Native experiences with room to grow over time.</span></li>
+          <li><strong>Calm by design</strong><span>Interfaces that feel warm and easy to trust.</span></li>
+          <li><strong>Care in the details</strong><span>Small things handled properly, release after release.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="home-contact">
+          <div>
+            <h2>Say hello.</h2>
+            <p>Questions, partnership ideas, or interest in MapleTrail products can be sent directly by email.</p>
+          </div>
+          <a class="btn btn-primary" href="mailto:support@mapletrailsoftware.com?subject=MapleTrail%20Software">support@mapletrailsoftware.com</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div>© 2026 MapleTrail Software</div>
+  <footer class="footer home-footer">
+    <div class="container home-footer-grid">
       <div>
-        <a href="https://www.facebook.com/mapletrailsoftware/" target="_blank" rel="noopener noreferrer">Facebook</a> · <a href="/support/">Support</a> · <a href="/privacy/">Privacy</a>
+        <div class="brand-title">MapleTrail Software Inc.</div>
+        <p>Independent, Apple-first software for memory, habits, travel, planning, and Acadian culture.</p>
       </div>
+      <nav aria-label="Apps">
+        <h4>Apps</h4>
+        <a href="/momentslater/">Moments Later</a>
+        <a href="/habitwallet/">Habit Wallet</a>
+        <a href="/momentsaway/">Moments Away</a>
+        <a href="/ifneeded/">If Needed</a>
+        <a href="/acadie/">Acadie</a>
+      </nav>
+      <nav aria-label="Company">
+        <h4>Company</h4>
+        <a href="#about">About</a>
+        <a href="/support/">Support</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="https://www.facebook.com/mapletrailsoftware/" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </nav>
     </div>
+    <div class="container home-footer-base">© 2026 MapleTrail Software Inc.</div>
   </footer>
 </body>
 </html>
