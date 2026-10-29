@@ -46,6 +46,18 @@ for page,sections in content['pages'].items():
  for section in sections:
   for text in [section['heading']]+[unit['text'] for unit in section['units']]:
    if text not in visible:errors.append(f'{page}: missing recovered content: {text[:75]}')
+# Current Acadie capabilities and locale-specific raw screenshots remain visible.
+current_features=json.loads((root/'content/acadie-current.json').read_text())
+for locale,page in [('en','acadie'),('fr','acadie/fr-CA')]:
+ soup=BeautifulSoup((root/page/'index.html').read_text(),'html.parser');visible=' '.join(soup.main.get_text(' ',strip=True).split());data=current_features[locale]
+ for value in [data['title'],data['radio_title'],data['radio_copy'],data['plus_copy']]+[value for card in data['cards'] for value in [card['title'],card['copy'],card['note']]]:
+  if value not in visible:errors.append(f'{page}: missing current Acadie feature content')
+ for card in data['cards']:
+  src='/images/'+page+'/'+card['image']
+  if not soup.find('img',src=src):errors.append(f'{page}: missing native feature screenshot {src}')
+for p in files:
+ ids=[tag['id'] for tag in BeautifulSoup(p.read_text(),'html.parser').select('[id]')]
+ if len(ids)!=len(set(ids)):errors.append(f'{p}: duplicate ids')
 from PIL import Image
 for og in (root/'images/og').glob('*.jpg'):
  if Image.open(og).size!=(1200,630):errors.append(f'{og}: expected 1200x630 sharing card')

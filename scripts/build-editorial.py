@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 
 ROOT=Path(__file__).resolve().parents[1]
 PRODUCT_DETAILS=json.loads((ROOT/'content/product-details.json').read_text())['pages']
+ACADIE_CURRENT=json.loads((ROOT/'content/acadie-current.json').read_text())
 NAMES={'acadie':'Acadie','momentslater':'Moments Later','habitwallet':'Habit Wallet','momentsaway':'Moments Away','ifneeded':'If Needed'}
 STORES={'acadie':'https://apps.apple.com/ca/app/acadie/id6769209012','momentslater':'https://apps.apple.com/ca/app/moments-later/id6761868181','habitwallet':'https://apps.apple.com/ca/app/habit-wallet/id6786388267','momentsaway':'https://apps.apple.com/ca/app/moments-away/id6765818943'}
 PLAY='https://play.google.com/store/apps/details?id=com.mapletrailsoftware.acadie'
@@ -88,10 +89,30 @@ def recovered_sections(key,fr=False,founder_only=False):
         parts.append('</section>');output.append(''.join(parts))
     return ''.join(output)
 
+
+def current_acadie(fr=False):
+    data=ACADIE_CURRENT['fr' if fr else 'en']
+    labels=['Jeux','Communauté','Créateurs'] if fr else ['Games','Community','Creators']
+    parts=[f'<section class="wrap current-acadie" id="living-acadie"><p class="eyebrow">{escape(data["eyebrow"])}</p><h2>{escape(data["title"])}</h2><p class="current-intro">{escape(data["intro"])}</p><nav class="current-nav" aria-label="{escape(data["nav_label"])}">']
+    for card,label in zip(data['cards'],labels):parts.append(f'<a href="#{card["id"]}">{label}</a>')
+    parts.append('</nav><div class="current-grid">')
+    for card in data['cards']:
+        src=screen_path('acadie',card['image'],fr)
+        parts.append(f'<article id="{card["id"]}"><h3>{escape(card["title"])}</h3><figure><a href="{src}" target="_blank" rel="noopener" aria-label="{escape(card["alt"])}">{img(src,card["alt"])}</a></figure><p>{escape(card["copy"])}</p><p class="current-note">{escape(card["note"])}</p></article>')
+    parts.append(f'</div><div class="current-extras"><div id="web-radio"><h3>{escape(data["radio_title"])}</h3><p>{escape(data["radio_copy"])}</p></div><div><h3>{escape(data["plus_title"])}</h3><p>{escape(data["plus_copy"])}</p></div></div><p class="current-note">{escape(data["screenshot_note"])}</p></section>')
+    return ''.join(parts)
+
 def app_main(key,fr=False):
-    d=FRENCH if fr else DATA[key]
+    d=(FRENCH if fr else DATA[key]).copy()
+    if key=='acadie':
+        d['screen']='current-home.webp'
+        d['sub']='Récits, jeux, créateurs et communauté vivante.' if fr else 'Stories, games, creators, and a living community.'
+        d['desc']='Découvrez le patrimoine et les noms de famille, rencontrez les créateurs et échangez autour de la culture acadienne. Jouez sur iPhone et iPad.' if fr else 'Explore heritage and family roots, meet creators, and connect through living Acadian culture. Play daily games on iPhone and iPad.'
     photo='/images/editorial/'+d['photo']+'.webp'
     main=f'<main id="main"><div class="wrap breadcrumb"><a href="/#apps">'+('Nos apps' if fr else 'Our apps')+f'</a><span>/</span><span>{d["tag"]}</span></div><section class="product-hero"><div class="wrap product-hero-grid"><div class="product-hero-copy"><p class="product-name">{d["tag"]}</p><h1>{d["title"]}</h1><p class="subhead">{d["sub"]}</p><div class="actions">{buttons(key,fr)}</div><p class="hero-description">{d["desc"]}</p><p class="availability">{d["platform"]}</p></div><figure class="product-art">{img(photo,"", "scene",False)}{img(screen_path(key,d["screen"],fr),d["tag"]+(" — écran de l’app" if fr else " — actual app screen"),"hero-screen",False)}</figure></div></section><section id="features" class="wrap story-rows">'
+    if key=='acadie':
+        main=main.replace('<section id="features" class="wrap story-rows">',current_acadie(fr)+'<section id="features" class="wrap story-rows">')
+        main=main.replace('<p class="hero-description">','<a class="text-link founder-link" href="#living-acadie">'+('Jeux, Communauté et créateurs' if fr else 'Games, Community, and creators')+'</a><p class="hero-description">')
     if key=='momentslater':
         marker='<section id="features" class="wrap story-rows">'
         main=main.replace(marker,recovered_sections(key,fr,True)+marker)
@@ -105,7 +126,7 @@ def app_main(key,fr=False):
 
 def home_main():
     result='<main id="main"><section class="coastal-hero">'+img('/images/editorial/coast.webp','','coastal-photo',False)+'<div class="wrap"><div class="coastal-copy"><p class="eyebrow">Independent software, thoughtfully made</p><h1>Thoughtful apps.<br>Personal connections.</h1><p>For the moments, places,<br>and details worth keeping.</p><a class="button" href="#apps">Explore our apps</a></div></div></section>'
-    result+='<section class="wrap featured-app"><div class="featured-copy"><p class="eyebrow">Featured app</p><h2>Acadie</h2><p>Discover the people, places, and stories that keep Acadian heritage alive.</p><p class="small">English & French · iOS & Android</p><a class="text-link" href="/acadie/">Discover Acadie</a></div><div class="featured-visual">'+img('/images/editorial/coast.webp','','featured-photo')+'<div class="featured-screens">'+img('/images/acadie/home-app-2026.jpg','Acadie home screen with cultural stories.','')+img('/images/acadie/explore-app-2026.jpg','Acadie Explore screen with communities and places.','')+'</div></div></section>'
+    result+='<section class="wrap featured-app"><div class="featured-copy"><p class="eyebrow">Featured app</p><h2>Acadie</h2><p>Discover the people, places, and stories that keep Acadian heritage alive.</p><p class="small">Community, creators & Web Radio.<br>Games on iPhone & iPad.<br>English & French · iOS & Android</p><a class="text-link" href="/acadie/">Discover Acadie</a></div><div class="featured-visual">'+img('/images/editorial/coast.webp','','featured-photo')+'<div class="featured-screens">'+img('/images/acadie/current-home.webp','Acadie home screen with stories, Web Radio, and games.','')+img('/images/acadie/explore-app-2026.jpg','Acadie Explore screen with communities and places.','')+'</div></div></section>'
     result+='<section id="apps" class="wrap app-collection"><div class="section-title"><p class="eyebrow">Our apps</p><p>A little more meaning in the everyday.</p></div><div class="app-grid">'
     photos={'momentslater':'memories','habitwallet':'essentials','momentsaway':'coast','ifneeded':'essentials'}
     summaries={'momentslater':'A simpler way to keep today’s little moments.','habitwallet':'Small steps. Rewards that matter to you.','momentsaway':'Keep your places and travel stories together.','ifneeded':'Keep the important details within reach.'}
@@ -117,7 +138,7 @@ def home_main():
 def write_page(path,main,key=None,fr=False):
     p=ROOT/path;soup=BeautifulSoup(p.read_text(),'html.parser')
     head=str(soup.head)
-    desc={'acadie':('Acadie est disponible sur l’App Store et Google Play. Explorez les récits, lieux, noms de famille et la culture acadienne en français et en anglais.' if fr else 'Acadie is available on the App Store and Google Play. Explore Acadian stories, places, culture, and family names in English and French.'),'momentslater':'Capture now. Reflect later. Moments Later is available on iPhone, iPad, Mac, and Apple Watch, with shared Premium across supported devices.',None:'Thoughtful apps. Personal connections. Discover Acadie, Moments Later, Habit Wallet, Moments Away, and If Needed from MapleTrail Software Inc.'}.get(key)
+    desc={'acadie':('Acadie est disponible sur iOS et Android. Découvrez les récits, forums, créateurs, Acadie Web Radio, lieux et racines. Jouez sur iPhone et iPad.' if fr else 'Acadie is available on iOS and Android. Explore stories, Community, creators, Web Radio, places, and family roots. Play daily games on iPhone and iPad.'),'momentslater':'Capture now. Reflect later. Moments Later is available on iPhone, iPad, Mac, and Apple Watch, with shared Premium across supported devices.',None:'Thoughtful apps. Personal connections. Discover Acadie, Moments Later, Habit Wallet, Moments Away, and If Needed from MapleTrail Software Inc.'}.get(key)
     if desc:
         for meta in soup.head.select('meta[name="description"], meta[property="og:description"], meta[name="twitter:description"]'):meta['content']=desc
         head=str(soup.head)

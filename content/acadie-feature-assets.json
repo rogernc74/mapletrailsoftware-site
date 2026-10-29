@@ -1,0 +1,50 @@
+[
+  {
+    "source": "/Users/rogercormier/Kotlin/AcadieKMP/Marketing/AppStore/source-captures/1.6/iPhone/en-CA/01-home.png",
+    "source_sha256": "dfdd1727a7a6269041f88e8db25a9aec4c8530fcb84b47c32d956ad0e61f7f4e",
+    "output": "images/acadie/current-home.webp",
+    "processing": "Resize and WebP only; original native screenshot, no ButterKit composition."
+  },
+  {
+    "source": "/Users/rogercormier/Kotlin/AcadieKMP/Marketing/AppStore/source-captures/1.6/iPhone/en-CA/02-games.png",
+    "source_sha256": "63230dace45228a1a4785e3577a9a4938d85a876ded0cb491baea03b26e3dca3",
+    "output": "images/acadie/games.webp",
+    "processing": "Resize and WebP only; original native screenshot, no ButterKit composition."
+  },
+  {
+    "source": "/Users/rogercormier/Kotlin/AcadieKMP/Marketing/AppStore/source-captures/1.6/iPhone/en-CA/06-creators.png",
+    "source_sha256": "dcf0e8754f5fe577b5b5ae26333d37189fe61dcda4a062c75f215903c0410696",
+    "output": "images/acadie/creators.webp",
+    "processing": "Resize and WebP only; original native screenshot, no ButterKit composition."
+  },
+  {
+    "source": "/Users/rogercormier/Kotlin/AcadieKMP/docs/qa/community-production-2026-09-14/ios-en.jpg",
+    "source_sha256": "f0fdbff3224e57274fae924e92e8259321b3403ea8d6275075810c8be3ce8910",
+    "output": "images/acadie/community-boards.webp",
+    "processing": "Native public board-list detail crop0,0,368,700; excludes older navigation bar and contains no private messages or account data."
+  },
+  {
+    "source": "/Users/rogercormier/Kotlin/AcadieKMP/Marketing/AppStore/source-captures/1.6/iPhone/fr-CA/01-home.png",
+    "source_sha256": "7a7e5784cfa09bba98037e3a8439d6ba9b01340b99a35ee1a0ffdc4655b10ef2",
+    "output": "images/acadie/fr-CA/current-home.webp",
+    "processing": "Resize and WebP only; original native screenshot, no ButterKit composition."
+  },
+  {
+    "source": "/Users/rogercormier/Kotlin/AcadieKMP/Marketing/AppStore/source-captures/1.6/iPhone/fr-CA/02-games.png",
+    "source_sha256": "ada787dfd16586304ca8f1476ab497ebd69c00a230618a0dd4ebedb649eeb437",
+    "output": "images/acadie/fr-CA/games.webp",
+    "processing": "Resize and WebP only; original native screenshot, no ButterKit composition."
+  },
+  {
+    "source": "/Users/rogercormier/Kotlin/AcadieKMP/Marketing/AppStore/source-captures/1.6/iPhone/fr-CA/06-creators.png",
+    "source_sha256": "142e0c304e046d7c289ef6bba1a8ccf8ec15168648849de6c84782af804589c0",
+    "output": "images/acadie/fr-CA/creators.webp",
+    "processing": "Resize and WebP only; original native screenshot, no ButterKit composition."
+  },
+  {
+    "source": "/Users/rogercormier/Kotlin/AcadieKMP/docs/qa/community-production-2026-09-14/ios-fr.jpg",
+    "source_sha256": "984f9253d815e6812206f39f247e8988e6120c14dee97951fdeed8fb6940820a",
+    "output": "images/acadie/fr-CA/community-boards.webp",
+    "processing": "Native public board-list detail crop0,0,368,700; excludes older navigation bar and contains no private messages or account data."
+  }
+]

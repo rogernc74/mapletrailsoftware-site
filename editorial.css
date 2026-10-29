@@ -57,3 +57,22 @@
  .founder-story ul{columns:1}
  .founder-link{order:2;margin:20px 0 0}
 }
+/* Native captures and the current living-culture features lead the Acadie page. */
+.current-acadie{padding:46px 0;border-bottom:1px solid var(--rule)}
+.current-acadie>h2{font-size:42px;margin-bottom:18px}
+.current-intro{font:21px/1.5 Georgia,serif;max-width:62ch}
+.current-nav{display:flex;flex-wrap:wrap;gap:24px;margin:22px 0 34px;font-size:14px}
+.current-nav a{color:var(--accent);text-decoration:underline;text-underline-offset:5px;padding:7px 0}
+.current-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:34px}
+.current-grid article{min-width:0;scroll-margin-top:30px}
+.current-grid h3{font-size:29px;min-height:65px;margin-bottom:20px}
+.current-grid figure{height:560px;display:flex;align-items:flex-start;justify-content:center;margin-bottom:24px}
+.current-grid figure img{height:auto;max-height:560px;width:auto;max-width:100%;border-radius:12px}
+.current-grid figure a{display:block;max-width:100%}
+.current-grid article>p{font-size:16px;line-height:1.65;margin-bottom:15px}
+.current-note{font-size:12px!important;line-height:1.6!important;color:#505b60}
+.current-extras{display:grid;grid-template-columns:1fr 1fr;gap:55px;margin:34px 0 22px;padding-top:30px;border-top:1px solid var(--rule)}
+.current-extras h3{font-size:29px;margin-bottom:16px}
+.current-extras p{font-size:16px;line-height:1.65}
+@media(max-width:1000px){.current-grid{gap:22px}.current-grid h3{font-size:25px}.current-grid figure{height:440px}.current-grid figure img{max-height:440px}}
+@media(max-width:650px){.current-acadie{padding:34px 0}.current-acadie>h2{font-size:34px}.current-intro{font-size:19px}.current-grid{grid-template-columns:1fr;gap:34px}.current-grid h3{min-height:0;font-size:29px}.current-grid figure{height:auto;max-height:none;margin-bottom:20px}.current-grid figure img{max-height:620px;max-width:100%}.current-extras{grid-template-columns:1fr;gap:28px}.current-nav{gap:20px}}
