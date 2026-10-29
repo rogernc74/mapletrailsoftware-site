@@ -38,8 +38,16 @@ for p in files:
   new=BeautifulSoup(p.read_text(),'html.parser')
   if re.sub(r'MapleTrail Software(?! Inc\.)','MapleTrail Software Inc.',old.main.get_text(' ',strip=True)).replace('MapleTrail Software Inc..','MapleTrail Software Inc.')!=new.main.get_text(' ',strip=True):errors.append(rel+': legal/support main text changed')
   legal.append(rel)
+# Product copy recovered from the pre-redesign site must remain visible.
+content=json.loads((root/'content/product-details.json').read_text())
+for page,sections in content['pages'].items():
+ current=BeautifulSoup((root/page/'index.html').read_text(),'html.parser')
+ visible=' '.join(current.main.get_text(' ',strip=True).split())
+ for section in sections:
+  for text in [section['heading']]+[unit['text'] for unit in section['units']]:
+   if text not in visible:errors.append(f'{page}: missing recovered content: {text[:75]}')
 from PIL import Image
 for og in (root/'images/og').glob('*.jpg'):
  if Image.open(og).size!=(1200,630):errors.append(f'{og}: expected 1200x630 sharing card')
-result={'html_pages':len(files),'local_references_checked':links,'images_checked':images,'legal_support_bodies_preserved':len(legal),'errors':errors,'result':'passed' if not errors else 'failed'}
+result={'html_pages':len(files),'local_references_checked':links,'images_checked':images,'legal_support_bodies_preserved':len(legal),'product_sections_preserved':sum(len(v) for v in content['pages'].values()),'product_content_units_preserved':sum(1+len(s['units']) for v in content['pages'].values() for s in v),'errors':errors,'result':'passed' if not errors else 'failed'}
 print(json.dumps(result,indent=2,ensure_ascii=False));sys.exit(bool(errors))

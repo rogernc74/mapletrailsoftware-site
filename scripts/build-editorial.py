@@ -1,9 +1,11 @@
 """Rebuild the seven static marketing pages; retain existing heads and legal bodies."""
 from pathlib import Path
 from html import escape
+import json
 from bs4 import BeautifulSoup
 
 ROOT=Path(__file__).resolve().parents[1]
+PRODUCT_DETAILS=json.loads((ROOT/'content/product-details.json').read_text())['pages']
 NAMES={'acadie':'Acadie','momentslater':'Moments Later','habitwallet':'Habit Wallet','momentsaway':'Moments Away','ifneeded':'If Needed'}
 STORES={'acadie':'https://apps.apple.com/ca/app/acadie/id6769209012','momentslater':'https://apps.apple.com/ca/app/moments-later/id6761868181','habitwallet':'https://apps.apple.com/ca/app/habit-wallet/id6786388267','momentsaway':'https://apps.apple.com/ca/app/moments-away/id6765818943'}
 PLAY='https://play.google.com/store/apps/details?id=com.mapletrailsoftware.acadie'
@@ -59,14 +61,45 @@ def details(key,fr):
     a,b,c,d,link=values[key]
     return f'<section class="wrap product-notes" id="premium"><div><p class="eyebrow">Thoughtfully made</p><h2>{a}</h2><p>{b}</p><a class="text-link" href="{link}">Read the privacy policy</a></div><div><h3>{c}</h3><p>{d}</p></div></section>'
 
+
+def recovered_sections(key,fr=False,founder_only=False):
+    page=key+('/fr-CA' if fr else '')
+    output=[]
+    for section in PRODUCT_DETAILS[page]:
+        founder=section['heading']=='Built from a real regret.'
+        if founder!=founder_only:continue
+        # Features retain the main screenshot anchor; Premium owns its original anchor.
+        anchor='why' if founder else 'app-features' if section['id']=='features' else section['id']
+        classes='founder-story' if founder else 'product-detail'
+        parts=[f'<section class="wrap {classes}" id="{anchor}">']
+        if section['eyebrow']:parts.append(f'<p class="eyebrow">{escape(section["eyebrow"])}</p>')
+        parts.append(f'<h2>{escape(section["heading"])}</h2>')
+        in_list=False
+        for unit in section['units']:
+            kind=unit['kind'];text=escape(unit['text'])
+            if kind=='li':
+                if not in_list:parts.append('<ul>');in_list=True
+                parts.append(f'<li>{text}</li>');continue
+            if in_list:parts.append('</ul>');in_list=False
+            if kind=='link':parts.append(f'<p><a class="text-link" href="{escape(unit["href"],quote=True)}">{text}</a></p>')
+            elif kind=='strong':parts.append(f'<p><strong>{text}</strong></p>')
+            else:parts.append(f'<{kind}>{text}</{kind}>')
+        if in_list:parts.append('</ul>')
+        parts.append('</section>');output.append(''.join(parts))
+    return ''.join(output)
+
 def app_main(key,fr=False):
     d=FRENCH if fr else DATA[key]
     photo='/images/editorial/'+d['photo']+'.webp'
     main=f'<main id="main"><div class="wrap breadcrumb"><a href="/#apps">'+('Nos apps' if fr else 'Our apps')+f'</a><span>/</span><span>{d["tag"]}</span></div><section class="product-hero"><div class="wrap product-hero-grid"><div class="product-hero-copy"><p class="product-name">{d["tag"]}</p><h1>{d["title"]}</h1><p class="subhead">{d["sub"]}</p><div class="actions">{buttons(key,fr)}</div><p class="hero-description">{d["desc"]}</p><p class="availability">{d["platform"]}</p></div><figure class="product-art">{img(photo,"", "scene",False)}{img(screen_path(key,d["screen"],fr),d["tag"]+(" — écran de l’app" if fr else " — actual app screen"),"hero-screen",False)}</figure></div></section><section id="features" class="wrap story-rows">'
+    if key=='momentslater':
+        marker='<section id="features" class="wrap story-rows">'
+        main=main.replace(marker,recovered_sections(key,fr,True)+marker)
+        main=main.replace('<p class="hero-description">','<a class="text-link founder-link" href="#why">Why I built Moments Later</a><p class="hero-description">')
     for i,(label,title,copy,screen) in enumerate(d['rows']):
         wide=' wide-screen' if screen.startswith('mac-') else ''
         main+=f'<article class="story-row"><figure class="story-visual{wide}">{img(photo,"","story-photo")}{img(screen_path(key,screen,fr),d["tag"]+" — "+title,"story-screen")}</figure><div class="story-copy"><p class="eyebrow">{label}</p><h2>{title}</h2><p>{copy}</p></div></article>'
-    main+='</section>'+details(key,fr)
+    main+='</section>'+recovered_sections(key,fr)
     main+=f'<section class="wrap closing"><p class="eyebrow">'+('À vous de découvrir' if fr else 'Made for your everyday')+f'</p><h2>{d["closing"]}</h2><div class="actions">{buttons(key,fr)}</div></section></main>'
     return main
 
