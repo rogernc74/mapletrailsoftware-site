@@ -55,6 +55,14 @@ for locale,page in [('en','acadie'),('fr','acadie/fr-CA')]:
  for card in data['cards']:
   src='/images/'+page+'/'+card['image']
   if not soup.find('img',src=src):errors.append(f'{page}: missing native feature screenshot {src}')
+ # Guard against returning to the superseded screenshots or text-only Radio section.
+ for name in ('current-names.webp','current-explore.webp','current-stories.webp',data['radio_image']):
+  src='/images/'+page+'/'+name
+  if not soup.find('img',src=src):errors.append(f'{page}: missing refreshed screenshot {src}')
+ if not soup.select_one('#web-radio img'):errors.append(f'{page}: Radio has no player screenshot')
+ if data['names_note'] not in visible:errors.append(f'{page}: missing Names screenshot locale note')
+ for node in soup.select('img[src]'):
+  if any(old in node['src'] for old in ('names-app-2026','explore-app-2026','stories-app-2026')):errors.append(f'{page}: superseded Acadie screenshot remains')
 for p in files:
  ids=[tag['id'] for tag in BeautifulSoup(p.read_text(),'html.parser').select('[id]')]
  if len(ids)!=len(set(ids)):errors.append(f'{p}: duplicate ids')

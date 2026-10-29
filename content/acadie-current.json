@@ -41,7 +41,12 @@
     "radio_copy": "Listen to Acadian music and voices while you explore, with the radio mini-player staying close at hand.",
     "plus_title": "More to explore with Acadie+.",
     "plus_copy": "The optional subscription adds complete cinematic stories and extra games, including missed-day Trivia. Prepare extra games online to enjoy them offline.",
-    "screenshot_note": "Original app captures. Games and creator screens shown on iPhone."
+    "screenshot_note": "Original app captures. Games and creator screens shown on iPhone.",
+    "radio_label": "Web Radio",
+    "radio_image": "radio-player.webp",
+    "radio_alt": "Native Acadie Web Radio player showing the station logo, live track and recently played songs.",
+    "radio_note": "Radio player on iPhone. Song information shown at the time of capture.",
+    "names_note": "Native Names screen shown in English."
   },
   "fr": {
     "eyebrow": "L’Acadie vivante",
@@ -78,6 +83,11 @@
     "radio_copy": "Écoutez des musiques et des voix de l’Acadie pendant votre exploration, avec le mini-lecteur toujours à portée de main.",
     "plus_title": "Encore plus à découvrir avec Acadie+.",
     "plus_copy": "L’abonnement facultatif donne accès aux récits cinématographiques complets et aux jeux supplémentaires, dont les quiz des journées manquées. Préparez des jeux en ligne pour en profiter hors ligne.",
-    "screenshot_note": "Captures originales de l’app. Jeux et créateurs présentés sur iPhone."
+    "screenshot_note": "Captures originales de l’app. Jeux et créateurs présentés sur iPhone.",
+    "radio_label": "Web Radio",
+    "radio_image": "radio-player.webp",
+    "radio_alt": "Lecteur natif Acadie Web Radio sur Android avec le titre en cours et les morceaux récemment diffusés.",
+    "radio_note": "Lecteur radio sur Android. Informations musicales affichées au moment de la capture.",
+    "names_note": "Écran natif des noms de famille présenté en anglais."
   }
 }
