@@ -1,0 +1,106 @@
+[
+  {
+    "source": "/Users/rogercormier/Kotlin/AcadieKMP/Marketing/AppStore/source-captures/1.6/iPhone/en-CA/01-home.png",
+    "source_sha256": "dfdd1727a7a6269041f88e8db25a9aec4c8530fcb84b47c32d956ad0e61f7f4e",
+    "output": "images/acadie/current-home.webp",
+    "processing": "Resize and WebP only; original native screenshot, no ButterKit composition."
+  },
+  {
+    "source": "/Users/rogercormier/Kotlin/AcadieKMP/Marketing/AppStore/source-captures/1.6/iPhone/en-CA/02-games.png",
+    "source_sha256": "63230dace45228a1a4785e3577a9a4938d85a876ded0cb491baea03b26e3dca3",
+    "output": "images/acadie/games.webp",
+    "processing": "Resize and WebP only; original native screenshot, no ButterKit composition."
+  },
+  {
+    "source": "/Users/rogercormier/Kotlin/AcadieKMP/Marketing/AppStore/source-captures/1.6/iPhone/en-CA/06-creators.png",
+    "source_sha256": "dcf0e8754f5fe577b5b5ae26333d37189fe61dcda4a062c75f215903c0410696",
+    "output": "images/acadie/creators.webp",
+    "processing": "Resize and WebP only; original native screenshot, no ButterKit composition."
+  },
+  {
+    "source": "/Users/rogercormier/Kotlin/AcadieKMP/docs/qa/community-production-2026-09-14/ios-en.jpg",
+    "source_sha256": "f0fdbff3224e57274fae924e92e8259321b3403ea8d6275075810c8be3ce8910",
+    "output": "images/acadie/community-boards.webp",
+    "processing": "Native public board-list detail crop0,0,368,700; excludes older navigation bar and contains no private messages or account data."
+  },
+  {
+    "source": "/Users/rogercormier/Kotlin/AcadieKMP/Marketing/AppStore/source-captures/1.6/iPhone/fr-CA/01-home.png",
+    "source_sha256": "7a7e5784cfa09bba98037e3a8439d6ba9b01340b99a35ee1a0ffdc4655b10ef2",
+    "output": "images/acadie/fr-CA/current-home.webp",
+    "processing": "Resize and WebP only; original native screenshot, no ButterKit composition."
+  },
+  {
+    "source": "/Users/rogercormier/Kotlin/AcadieKMP/Marketing/AppStore/source-captures/1.6/iPhone/fr-CA/02-games.png",
+    "source_sha256": "ada787dfd16586304ca8f1476ab497ebd69c00a230618a0dd4ebedb649eeb437",
+    "output": "images/acadie/fr-CA/games.webp",
+    "processing": "Resize and WebP only; original native screenshot, no ButterKit composition."
+  },
+  {
+    "source": "/Users/rogercormier/Kotlin/AcadieKMP/Marketing/AppStore/source-captures/1.6/iPhone/fr-CA/06-creators.png",
+    "source_sha256": "142e0c304e046d7c289ef6bba1a8ccf8ec15168648849de6c84782af804589c0",
+    "output": "images/acadie/fr-CA/creators.webp",
+    "processing": "Resize and WebP only; original native screenshot, no ButterKit composition."
+  },
+  {
+    "source": "/Users/rogercormier/Kotlin/AcadieKMP/docs/qa/community-production-2026-09-14/ios-fr.jpg",
+    "source_sha256": "984f9253d815e6812206f39f247e8988e6120c14dee97951fdeed8fb6940820a",
+    "output": "images/acadie/fr-CA/community-boards.webp",
+    "processing": "Native public board-list detail crop0,0,368,700; excludes older navigation bar and contains no private messages or account data."
+  },
+  {
+    "source": "/Users/rogercormier/Kotlin/AcadieKMP/Marketing/AppStore/source-captures/1.6/iPhone/en-CA/05-explore.png",
+    "source_sha256": "34f99986e3d139c9711688e1a4aaad756535ffa7683daa7a9cef54b6fcd0d0c5",
+    "output": "images/acadie/current-explore.webp",
+    "processing": "Resize and WebP only; no ButterKit composition.",
+    "locale": "en-CA"
+  },
+  {
+    "source": "/Users/rogercormier/Kotlin/AcadieKMP/Marketing/AppStore/source-captures/1.6/iPhone/en-CA/04-stories.png",
+    "source_sha256": "b7940b902d3e3b9b886501bc299a252a469ca5fabe46b5cba0252cb37660fa64",
+    "output": "images/acadie/current-stories.webp",
+    "processing": "Resize and WebP only; no ButterKit composition.",
+    "locale": "en-CA"
+  },
+  {
+    "source": "/Users/rogercormier/Kotlin/AcadieKMP/qa/map-298-input-search/ios-names-placeholder.jpg",
+    "source_sha256": "9d744600fad7b46c8ccfb74e180a6b8ac514080ec155c5fe5ad5c9a01c86e50a",
+    "output": "images/acadie/current-names.webp",
+    "processing": "Resize and WebP only; no ButterKit composition.",
+    "locale": "en-CA"
+  },
+  {
+    "source": "/Users/rogercormier/Kotlin/AcadieKMP/docs/qa/radio-resume/ios-resumed-after-video-en.png",
+    "source_sha256": "c13c2a8aaff56a207936de23f45f84b6f8f1180245f4ac0a143c4c4386412229",
+    "output": "images/acadie/radio-player.webp",
+    "processing": "Native Radio sheet crop (0, 140, 1170, 2532); resize and WebP only; no ButterKit composition.",
+    "locale": "en-CA"
+  },
+  {
+    "source": "/Users/rogercormier/Kotlin/AcadieKMP/Marketing/AppStore/source-captures/1.6/iPhone/fr-CA/05-explore.png",
+    "source_sha256": "75295c0ea9c86a02f4e60446a3b1165ad1a1ce0f3b91da8a11c50424ba148ea7",
+    "output": "images/acadie/fr-CA/current-explore.webp",
+    "processing": "Resize and WebP only; no ButterKit composition.",
+    "locale": "fr-CA"
+  },
+  {
+    "source": "/Users/rogercormier/Kotlin/AcadieKMP/Marketing/AppStore/source-captures/1.6/iPhone/fr-CA/04-stories.png",
+    "source_sha256": "f51f27cf7c61308446ce509bf6e81496112648b288ab24c9b520c489b834b001",
+    "output": "images/acadie/fr-CA/current-stories.webp",
+    "processing": "Resize and WebP only; no ButterKit composition.",
+    "locale": "fr-CA"
+  },
+  {
+    "source": "/Users/rogercormier/Kotlin/AcadieKMP/qa/map-298-input-search/ios-names-placeholder.jpg",
+    "source_sha256": "9d744600fad7b46c8ccfb74e180a6b8ac514080ec155c5fe5ad5c9a01c86e50a",
+    "output": "images/acadie/fr-CA/current-names.webp",
+    "processing": "Resize and WebP only; no ButterKit composition.",
+    "locale": "English native UI, explicitly captioned on French page."
+  },
+  {
+    "source": "/Users/rogercormier/Kotlin/AcadieKMP/build/android-auto-exclusion-20261020/radio-fr-playing.png",
+    "source_sha256": "cfdc83ea16a638cb03400cca5e2ebf7b796ac0b34df5f1e44ebfe8febb73376e",
+    "output": "images/acadie/fr-CA/radio-player.webp",
+    "processing": "Resize and WebP only; no ButterKit composition.",
+    "locale": "fr-CA"
+  }
+]

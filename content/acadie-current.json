@@ -1,0 +1,93 @@
+{
+  "sources": {
+    "verified_at": "2026-10-28",
+    "app_store": "https://apps.apple.com/ca/app/acadie/id6769209012",
+    "google_play": "https://play.google.com/store/apps/details?id=com.mapletrailsoftware.acadie",
+    "local_description": "/Users/rogercormier/Kotlin/AcadieKMP/fastlane/metadata/{en-CA,fr-CA}/description.txt",
+    "platform_note": "Public Apple listing verifies games. Current Google description is older; no new Android games release assertion is made."
+  },
+  "en": {
+    "eyebrow": "Living Acadie",
+    "title": "Play, create, and connect.",
+    "intro": "Acadie is also a place for daily discoveries, Acadian voices, and conversations that keep the culture moving.",
+    "nav_label": "Explore more of Acadie",
+    "cards": [
+      {
+        "id": "games",
+        "title": "A little play. A little discovery.",
+        "image": "games.webp",
+        "alt": "Native Acadie Games screen with Daily Trivia, Acadie Code, and Daily Word Search.",
+        "copy": "Try Daily Trivia, solve the four-symbol Acadie Code, or discover Acadian words and names in Word Search. Build your progress with XP, levels, points, and coins.",
+        "note": "Games on iPhone and iPad. An Acadie Account is required for official play and rewards."
+      },
+      {
+        "id": "community",
+        "title": "Join the conversation.",
+        "image": "community-boards.webp",
+        "alt": "Acadie Community board list for history, family names, places, language, and traditions.",
+        "copy": "Find your people through Community boards about history, family roots, places, language, and traditions. Read along, ask a question, and share what connects you to Acadie.",
+        "note": "Native Community board-list detail."
+      },
+      {
+        "id": "creators",
+        "title": "Meet the people making Acadie.",
+        "image": "creators.webp",
+        "alt": "Native Acadian Creators screen showing Vernon Doucet, Danette Robichaud, and creator filters.",
+        "copy": "Discover Acadian creators sharing videos, stories, books, and local work. Explore their profiles and find voices in English and French.",
+        "note": "Native Acadian Creators screen."
+      }
+    ],
+    "radio_title": "Keep Acadie Web Radio close.",
+    "radio_copy": "Listen to Acadian music and voices while you explore, with the radio mini-player staying close at hand.",
+    "plus_title": "More to explore with Acadie+.",
+    "plus_copy": "The optional subscription adds complete cinematic stories and extra games, including missed-day Trivia. Prepare extra games online to enjoy them offline.",
+    "screenshot_note": "Original app captures. Games and creator screens shown on iPhone.",
+    "radio_label": "Web Radio",
+    "radio_image": "radio-player.webp",
+    "radio_alt": "Native Acadie Web Radio player showing the station logo, live track and recently played songs.",
+    "radio_note": "Radio player on iPhone. Song information shown at the time of capture.",
+    "names_note": "Native Names screen shown in English."
+  },
+  "fr": {
+    "eyebrow": "L’Acadie vivante",
+    "title": "Jouez, créez et échangez.",
+    "intro": "Acadie est aussi un lieu de découvertes quotidiennes, de voix acadiennes et de conversations qui font vivre la culture.",
+    "nav_label": "Explorez davantage l’Acadie",
+    "cards": [
+      {
+        "id": "games",
+        "title": "Jouer pour découvrir.",
+        "image": "games.webp",
+        "alt": "Écran natif des Jeux Acadie avec le jeu-questionnaire, Acadie Code et la recherche de mots.",
+        "copy": "Répondez au jeu-questionnaire du jour, déchiffrez le code de quatre symboles d’Acadie Code ou trouvez des mots et des noms acadiens dans la recherche de mots. Progressez grâce à l’XP, aux niveaux, aux points et aux pièces.",
+        "note": "Jeux sur iPhone et iPad. Un compte Acadie est nécessaire pour les parties officielles et les récompenses."
+      },
+      {
+        "id": "community",
+        "title": "Prenez part aux échanges.",
+        "image": "community-boards.webp",
+        "alt": "Forums Communauté d’Acadie sur l’histoire, les noms de famille, les lieux, la langue et les traditions.",
+        "copy": "Retrouvez des gens qui partagent vos intérêts dans les forums sur l’histoire, les racines familiales, les lieux, la langue et les traditions. Lisez, posez une question et partagez ce qui vous relie à l’Acadie.",
+        "note": "Détail de la liste native des forums."
+      },
+      {
+        "id": "creators",
+        "title": "Rencontrez les créateurs d’ici.",
+        "image": "creators.webp",
+        "alt": "Écran natif des Créateurs acadiens avec Vernon Doucet, Danette Robichaud et les filtres.",
+        "copy": "Découvrez des créateurs acadiens qui partagent des vidéos, des récits, des livres et des œuvres locales. Parcourez leurs profils et trouvez des voix en français et en anglais.",
+        "note": "Écran natif des Créateurs acadiens."
+      }
+    ],
+    "radio_title": "Gardez Acadie Web Radio à portée de main.",
+    "radio_copy": "Écoutez des musiques et des voix de l’Acadie pendant votre exploration, avec le mini-lecteur toujours à portée de main.",
+    "plus_title": "Encore plus à découvrir avec Acadie+.",
+    "plus_copy": "L’abonnement facultatif donne accès aux récits cinématographiques complets et aux jeux supplémentaires, dont les quiz des journées manquées. Préparez des jeux en ligne pour en profiter hors ligne.",
+    "screenshot_note": "Captures originales de l’app. Jeux et créateurs présentés sur iPhone.",
+    "radio_label": "Web Radio",
+    "radio_image": "radio-player.webp",
+    "radio_alt": "Lecteur natif Acadie Web Radio sur Android avec le titre en cours et les morceaux récemment diffusés.",
+    "radio_note": "Lecteur radio sur Android. Informations musicales affichées au moment de la capture.",
+    "names_note": "Écran natif des noms de famille présenté en anglais."
+  }
+}

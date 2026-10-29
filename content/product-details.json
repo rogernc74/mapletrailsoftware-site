@@ -1,0 +1,1140 @@
+{
+  "source_commit": "2ea8c6ae68fe24c2069ad6a326d43b4b7362f58e",
+  "note": "Original substantive copy recovered after redesign. Company name updated by request; obsolete Apple-first positioning excluded. Original press descriptions and links retained.",
+  "pages": {
+    "momentslater": [
+      {
+        "id": "features",
+        "eyebrow": "Features",
+        "heading": "What Moments Later helps you do",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Moments Later helps you capture life as it happens, then come back to it later through journaling, timeline, richer day context, Memory Gallery milestones, and a calmer way to hold on to the moments that matter."
+          },
+          {
+            "kind": "h3",
+            "text": "Capture moments fast"
+          },
+          {
+            "kind": "p",
+            "text": "Write a quick line, save a photo, or log a moment from Apple Watch before it disappears."
+          },
+          {
+            "kind": "h3",
+            "text": "Build a real journal"
+          },
+          {
+            "kind": "p",
+            "text": "Short captured moments can grow into a fuller journal entry when you finally have time to sit with the day."
+          },
+          {
+            "kind": "h3",
+            "text": "See richer context"
+          },
+          {
+            "kind": "p",
+            "text": "Bring in details like weather, health, music, people, and place so memories feel grounded in what the day was really like."
+          },
+          {
+            "kind": "h3",
+            "text": "Revisit meaningful days"
+          },
+          {
+            "kind": "p",
+            "text": "Browse your timeline and go back to the moments worth remembering instead of letting them disappear into the blur."
+          },
+          {
+            "kind": "h3",
+            "text": "Unlock milestones"
+          },
+          {
+            "kind": "p",
+            "text": "Unlock achievements and see your captured life take shape with free and premium milestones in the gallery."
+          }
+        ]
+      },
+      {
+        "id": "how",
+        "eyebrow": "How it works",
+        "heading": "Capture now. Reflect later. Grow the memory over time.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "You do not need to write a perfect journal entry in the moment. You only need enough to save it now so it is still there when you have a quiet minute tonight."
+          },
+          {
+            "kind": "h3",
+            "text": "1. Capture a moment instantly"
+          },
+          {
+            "kind": "p",
+            "text": "Write a quick note, save a photo, or speak from Apple Watch before the moment slips away."
+          },
+          {
+            "kind": "h3",
+            "text": "2. Turn small moments into a real journal"
+          },
+          {
+            "kind": "p",
+            "text": "When the day slows down, your saved moments give you something real to build from instead of a blank page."
+          },
+          {
+            "kind": "h3",
+            "text": "3. Add the details around the day"
+          },
+          {
+            "kind": "p",
+            "text": "Context like weather, people, music, health, and place helps you remember not just what happened, but what the day felt like."
+          },
+          {
+            "kind": "h3",
+            "text": "4. Revisit the days that mattered"
+          },
+          {
+            "kind": "p",
+            "text": "The timeline makes it easy to move back through the moments you want to keep instead of losing them in the pace of life."
+          },
+          {
+            "kind": "h3",
+            "text": "5. Let the app carry more of the memory"
+          },
+          {
+            "kind": "p",
+            "text": "Integrated context means activities, workouts, weather, and other day signals can help the memory feel fuller without extra work from you."
+          },
+          {
+            "kind": "h3",
+            "text": "6. Watch your gallery grow"
+          },
+          {
+            "kind": "p",
+            "text": "As you keep capturing, the Memory Gallery unlocks milestones so the app reflects progress, streaks, and the shape of your lived life."
+          }
+        ]
+      },
+      {
+        "id": "momentslater-detail-3",
+        "eyebrow": "Apple Watch",
+        "heading": "Capture a moment before you even reach for your phone.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Tap the complication on your wrist. Speak. Done. Moments Later transcribes your voice and saves the moment instantly — no phone, no typing, no unlocking anything."
+          },
+          {
+            "kind": "strong",
+            "text": "Tap the complication"
+          },
+          {
+            "kind": "p",
+            "text": "One tap on your Watch face opens Moments Later instantly."
+          },
+          {
+            "kind": "strong",
+            "text": "Speak the moment"
+          },
+          {
+            "kind": "p",
+            "text": "Say what happened. A few words is enough."
+          },
+          {
+            "kind": "strong",
+            "text": "It is saved"
+          },
+          {
+            "kind": "p",
+            "text": "Speech to text captures it and stores it. The moment is yours."
+          }
+        ]
+      },
+      {
+        "id": "premium",
+        "eyebrow": "Premium",
+        "heading": "One Premium purchase across your supported devices.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Premium adds richer journal context and more Memory Gallery milestones. Your purchase is shared across supported devices through your App Store account, including Mac."
+          },
+          {
+            "kind": "h3",
+            "text": "What Premium adds"
+          },
+          {
+            "kind": "li",
+            "text": "Richer day context that helps a memory feel tied to a real day, not just a short note."
+          },
+          {
+            "kind": "li",
+            "text": "Context details like weather, people, place, music, and health signals around the moment."
+          },
+          {
+            "kind": "li",
+            "text": "Activity and workout context, including Strava-connected moments and movement through the day."
+          },
+          {
+            "kind": "li",
+            "text": "A fuller journaling experience built from the moments you already captured."
+          },
+          {
+            "kind": "li",
+            "text": "More Memory Gallery milestones and unlocks beyond the free set."
+          },
+          {
+            "kind": "li",
+            "text": "A broader version of the app as Moments Later keeps expanding."
+          },
+          {
+            "kind": "li",
+            "text": "Shared Premium access across supported devices, including Mac."
+          },
+          {
+            "kind": "h3",
+            "text": "Richer context around the day"
+          },
+          {
+            "kind": "p",
+            "text": "Premium helps the app carry more of the memory for you, with context like weather, location, health, music, people, and activity details that make the day easier to revisit later."
+          },
+          {
+            "kind": "h3",
+            "text": "Memory Gallery"
+          },
+          {
+            "kind": "p",
+            "text": "Premium also expands the Memory Gallery with more milestones, unlocks, and a stronger sense of progress as your captured life builds up over time."
+          }
+        ]
+      },
+      {
+        "id": "momentslater-detail-5",
+        "eyebrow": "Why it matters",
+        "heading": "Built from a real regret.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Moments Later started with a wish — that there had been a way to capture more of what happened when my kids were small. The little things they said. The ordinary afternoons. Now they are grown and on their own, and some of those moments are just gone."
+          },
+          {
+            "kind": "p",
+            "text": "This app is the one that would have helped then. It is here now for anyone still in those years — or anyone who simply wants to hold on to what is happening today."
+          },
+          {
+            "kind": "p",
+            "text": "— Roger, Founder"
+          },
+          {
+            "kind": "li",
+            "text": "Busy parents who want to save what their kids said before the day moves on."
+          },
+          {
+            "kind": "li",
+            "text": "People moving between meetings, commutes, errands, and real life."
+          },
+          {
+            "kind": "li",
+            "text": "Apple Watch users who need a fast way to log a moment immediately."
+          },
+          {
+            "kind": "li",
+            "text": "Anyone who wants memory capture without the pressure of instant journaling."
+          },
+          {
+            "kind": "li",
+            "text": "Small routines, places, meals, walks, and conversations worth keeping."
+          },
+          {
+            "kind": "li",
+            "text": "End-of-day reflection with something real to build from."
+          }
+        ]
+      },
+      {
+        "id": "momentslater-detail-6",
+        "eyebrow": "Mac",
+        "heading": "Moments Later is available on Mac.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Capture and revisit moments, browse your timeline, and write journal entries on a larger screen. Your Premium purchase applies on Mac too."
+          },
+          {
+            "kind": "strong",
+            "text": "Review on a larger screen"
+          },
+          {
+            "kind": "p",
+            "text": "Browse your captured moments and timeline on Mac."
+          },
+          {
+            "kind": "strong",
+            "text": "Write on Mac"
+          },
+          {
+            "kind": "p",
+            "text": "Turn saved moments into journal entries with room to write and reflect."
+          },
+          {
+            "kind": "strong",
+            "text": "Premium"
+          },
+          {
+            "kind": "p",
+            "text": "Your Premium purchase is shared across supported devices through your App Store account."
+          }
+        ]
+      },
+      {
+        "id": "about",
+        "eyebrow": "About MapleTrail",
+        "heading": "Thoughtful software, built with warmth.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "MapleTrail Software Inc. is the brand behind Moments Later — focused on creating software that feels useful, human, calm, and enduring. The goal is not to turn memory into a productivity system. It is to help people keep more of everyday life."
+          },
+          {
+            "kind": "li",
+            "text": "Fast capture for moments, memories, and reflections in real life."
+          },
+          {
+            "kind": "li",
+            "text": "Reflection that builds naturally from what you already captured."
+          },
+          {
+            "kind": "li",
+            "text": "Context that helps memories feel grounded in a real day."
+          },
+          {
+            "kind": "li",
+            "text": "Design that stays calm, clear, and emotionally warm."
+          },
+          {
+            "kind": "li",
+            "text": "Tools that work for everyone, not just disciplined journalers."
+          }
+        ]
+      },
+      {
+        "id": "contact",
+        "eyebrow": "Get in touch",
+        "heading": "Interested in Moments Later?",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Questions, feedback, partnerships, or interest in Moments Later can be sent directly by email. MapleTrail will reply with more information when available."
+          }
+        ]
+      }
+    ],
+    "habitwallet": [
+      {
+        "id": "how",
+        "eyebrow": "The loop",
+        "heading": "Make progress feel worth it.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Habit Wallet connects the small action you take today with something you are excited to enjoy later. No complicated budgeting. Just one motivating loop."
+          },
+          {
+            "kind": "h3",
+            "text": "Complete a habit"
+          },
+          {
+            "kind": "p",
+            "text": "Check off a routine, finish a timer, log water, or let Apple Health track your progress."
+          },
+          {
+            "kind": "h3",
+            "text": "Earn points"
+          },
+          {
+            "kind": "p",
+            "text": "Choose what each habit is worth and watch every completed action grow one shared balance."
+          },
+          {
+            "kind": "h3",
+            "text": "Redeem a reward"
+          },
+          {
+            "kind": "p",
+            "text": "Create rewards that mean something to you, set their cost, and spend when you are ready."
+          }
+        ]
+      },
+      {
+        "id": "habitwallet-detail-2",
+        "eyebrow": "Built around you",
+        "heading": "Flexible enough for real life.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Start with the habits and rewards you care about. Habit Wallet gives you structure without deciding what progress should look like for you."
+          },
+          {
+            "kind": "h3",
+            "text": "Habits your way"
+          },
+          {
+            "kind": "p",
+            "text": "Use manual check-ins, timed sessions, flexible schedules, reminders, targets, and custom point values."
+          },
+          {
+            "kind": "h3",
+            "text": "A reward shop you create"
+          },
+          {
+            "kind": "p",
+            "text": "Add anything that motivates you, from a quiet coffee to a weekend adventure, and choose its cost."
+          },
+          {
+            "kind": "h3",
+            "text": "Momentum you can see"
+          },
+          {
+            "kind": "p",
+            "text": "Build streaks, earn XP, complete quests, unlock achievements, and review your progress over time."
+          },
+          {
+            "kind": "h3",
+            "text": "Private iCloud sync"
+          },
+          {
+            "kind": "p",
+            "text": "Keep your wallet available across your Apple devices through your private iCloud database."
+          }
+        ]
+      },
+      {
+        "id": "health",
+        "eyebrow": "Apple Health",
+        "heading": "Let the progress you already make count.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Connect supported Health habits and let movement, exercise, standing, workouts, and water contribute to your goals. You can even turn closing all three Activity rings into one combined habit."
+          },
+          {
+            "kind": "p",
+            "text": "Steps"
+          },
+          {
+            "kind": "p",
+            "text": "Active energy"
+          },
+          {
+            "kind": "p",
+            "text": "Exercise minutes"
+          },
+          {
+            "kind": "p",
+            "text": "Stand hours"
+          },
+          {
+            "kind": "p",
+            "text": "Workouts"
+          },
+          {
+            "kind": "p",
+            "text": "Water"
+          },
+          {
+            "kind": "p",
+            "text": "Close Rings"
+          },
+          {
+            "kind": "p",
+            "text": "Health data stays on your device and is never sent to Habit Wallet servers or analytics."
+          }
+        ]
+      },
+      {
+        "id": "habitwallet-detail-4",
+        "eyebrow": "A clearer view",
+        "heading": "See what you earned and what comes next.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Your wallet, habits, rewards, streaks, achievements, and forecasts stay connected, so each screen answers the question that matters in the moment."
+          },
+          {
+            "kind": "strong",
+            "text": "Build habits your way"
+          },
+          {
+            "kind": "p",
+            "text": "Manual, timed, or Health goals"
+          },
+          {
+            "kind": "strong",
+            "text": "Level up as you grow"
+          },
+          {
+            "kind": "p",
+            "text": "XP, quests, streaks, and achievements"
+          },
+          {
+            "kind": "strong",
+            "text": "See what comes next"
+          },
+          {
+            "kind": "p",
+            "text": "Trends and reward forecasts"
+          }
+        ]
+      },
+      {
+        "id": "premium",
+        "eyebrow": "",
+        "heading": "More room for every goal.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "The free plan includes the complete habit-to-wallet-to-reward loop. Premium expands it with unlimited active habits and rewards, deeper insights, appearance options, and widgets."
+          },
+          {
+            "kind": "li",
+            "text": "Unlimited active habits and rewards"
+          },
+          {
+            "kind": "li",
+            "text": "Advanced trends and streak analysis"
+          },
+          {
+            "kind": "li",
+            "text": "Reward affordability forecasts"
+          },
+          {
+            "kind": "li",
+            "text": "More themes and app icons"
+          },
+          {
+            "kind": "li",
+            "text": "Home and Lock Screen widgets"
+          }
+        ]
+      },
+      {
+        "id": "habitwallet-detail-6",
+        "eyebrow": "Private by design",
+        "heading": "Your goals are yours.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Habit Wallet has no public profile, social feed, or custom account. Your content stays private, and you stay in control of analytics and permissions."
+          },
+          {
+            "kind": "p",
+            "text": "Private iCloud sync Your wallet data syncs through your personal private iCloud database."
+          },
+          {
+            "kind": "p",
+            "text": "On-device Health progress Raw Health data is not stored in iCloud or sent to analytics."
+          },
+          {
+            "kind": "p",
+            "text": "No personal habit analytics Habit names, reward names, notes, and exact Health values are never included."
+          }
+        ]
+      },
+      {
+        "id": "download",
+        "eyebrow": "Available now",
+        "heading": "One wallet. Better habits. Real rewards.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Download Habit Wallet on iPhone and start turning everyday progress into rewards you choose."
+          }
+        ]
+      }
+    ],
+    "momentsaway": [
+      {
+        "id": "how",
+        "eyebrow": "App features",
+        "heading": "Plan the next place. Keep the whole story.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Moments Away organizes your travel record around places. Save countries, provinces or states, cities, and landmarks; log visits; add notes, people, photos, and videos; then see the bigger picture."
+          },
+          {
+            "kind": "h3",
+            "text": "Map and remember"
+          },
+          {
+            "kind": "p",
+            "text": "Save places from the map, record return visits, and add the notes, people, photos, and videos that give them meaning."
+          },
+          {
+            "kind": "h3",
+            "text": "Plan what is next"
+          },
+          {
+            "kind": "p",
+            "text": "Use the Travel Checklist to keep track of countries and territories you have visited—and the ones you want to visit."
+          },
+          {
+            "kind": "h3",
+            "text": "See the journey take shape"
+          },
+          {
+            "kind": "p",
+            "text": "Review your collection with Year in Travel, Trip Stories, stats, and Home Screen widgets built from your own record."
+          }
+        ]
+      },
+      {
+        "id": "momentsaway-detail-2",
+        "eyebrow": "Privacy and data",
+        "heading": "Your places and notes are your travel record.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Keep your saved places, visits, notes, and media in a record you control. Use optional iCloud sync across your Apple devices, plus backups and exports for your own copies."
+          },
+          {
+            "kind": "strong",
+            "text": "Location"
+          },
+          {
+            "kind": "p",
+            "text": "Used for map features, nearby search, and saved-place context when you choose to use them."
+          },
+          {
+            "kind": "strong",
+            "text": "Photos and videos"
+          },
+          {
+            "kind": "p",
+            "text": "Added only when you attach media to a saved place or visit."
+          },
+          {
+            "kind": "strong",
+            "text": "Sync, backup, and export"
+          },
+          {
+            "kind": "p",
+            "text": "Optional iCloud sync and tools for keeping a copy of your own travel record."
+          }
+        ]
+      },
+      {
+        "id": "momentsaway-detail-3",
+        "eyebrow": "Free and one-time Premium",
+        "heading": "Your essential travel record stays free. Premium makes more of it.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Countries, provinces or states, cities, landmarks, visits, memories, the Travel Checklist, World Progress, backup, and export remain free. Moments Away Premium is an optional one-time purchase that adds polished ways to review, share, and personalize the travel record you already own."
+          },
+          {
+            "kind": "li",
+            "text": "Full Year in Travel reports and share images."
+          },
+          {
+            "kind": "li",
+            "text": "Route-based, shareable Trip Stories."
+          },
+          {
+            "kind": "li",
+            "text": "The complete customizable Widget Studio."
+          },
+          {
+            "kind": "li",
+            "text": "Premium themes, Collector Insights, and milestones."
+          }
+        ]
+      },
+      {
+        "id": "momentsaway-detail-4",
+        "eyebrow": "What you can save",
+        "heading": "Place records with notes, media, and visits.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Use the app for favourite places, quick stops, return visits, road trips, parks, beaches, restaurants, lookouts, and any location you want in your personal travel history."
+          },
+          {
+            "kind": "li",
+            "text": "Place names and map locations."
+          },
+          {
+            "kind": "li",
+            "text": "Visit dates and return visits."
+          },
+          {
+            "kind": "li",
+            "text": "Notes, people, photos, and videos."
+          },
+          {
+            "kind": "li",
+            "text": "Favourites and country grouping."
+          },
+          {
+            "kind": "li",
+            "text": "Collection stats, backups, and exports."
+          }
+        ]
+      },
+      {
+        "id": "momentsaway-detail-5",
+        "eyebrow": "Available now",
+        "heading": "Start your travel record on iPhone.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Download Moments Away free from the App Store. No app account or social feed is required. If you need help, email MapleTrail Software Inc. with your device, iOS version, and a short description of the issue."
+          }
+        ]
+      }
+    ],
+    "ifneeded": [
+      {
+        "id": "ifneeded-detail-1",
+        "eyebrow": "Why it exists",
+        "heading": "A calm place for information that is usually scattered.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "If Needed is built for practical readiness, not paperwork overload. Start with a simple plan, fill in what matters, and keep the important details findable."
+          },
+          {
+            "kind": "h3",
+            "text": "Collect the essentials"
+          },
+          {
+            "kind": "p",
+            "text": "Bills, money, insurance, digital life, household details, wishes, and trusted contacts."
+          },
+          {
+            "kind": "h3",
+            "text": "Review what needs attention"
+          },
+          {
+            "kind": "p",
+            "text": "See missing locations, access notes, stale bills, and items that need a quick check."
+          },
+          {
+            "kind": "h3",
+            "text": "Share when ready"
+          },
+          {
+            "kind": "p",
+            "text": "Create readable handoff PDFs and trusted-person packets when you decide it is time."
+          }
+        ]
+      },
+      {
+        "id": "privacy",
+        "eyebrow": "Privacy",
+        "heading": "Designed around local-first planning.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "If Needed can work without a MapleTrail account. Private iCloud sync is optional and uses your own Apple iCloud account when you turn it on."
+          },
+          {
+            "kind": "strong",
+            "text": "No ads"
+          },
+          {
+            "kind": "p",
+            "text": "No third-party advertising tracking."
+          },
+          {
+            "kind": "strong",
+            "text": "Device authentication"
+          },
+          {
+            "kind": "p",
+            "text": "Use Face ID, Touch ID, or device passcode."
+          },
+          {
+            "kind": "strong",
+            "text": "Private export"
+          },
+          {
+            "kind": "p",
+            "text": "You choose when to create or share a handoff PDF."
+          }
+        ]
+      },
+      {
+        "id": "ifneeded-detail-3",
+        "eyebrow": "Lifetime Unlock",
+        "heading": "Free to start. Unlock once when your plan grows.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "The free version includes the starter plan and up to 8 total plan items. The one-time Lifetime Unlock adds unlimited items, PDF export, trusted-person packets, and private iCloud sync."
+          },
+          {
+            "kind": "li",
+            "text": "Unlimited plan items."
+          },
+          {
+            "kind": "li",
+            "text": "Handoff PDF export."
+          },
+          {
+            "kind": "li",
+            "text": "Trusted-person sharing packets."
+          },
+          {
+            "kind": "li",
+            "text": "Private iCloud sync."
+          },
+          {
+            "kind": "li",
+            "text": "One-time purchase, not a subscription."
+          }
+        ]
+      },
+      {
+        "id": "ifneeded-detail-4",
+        "eyebrow": "Important note",
+        "heading": "Practical organization, not professional advice.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "If Needed helps organize information. It is not legal, financial, medical, insurance, tax, or estate-planning advice."
+          }
+        ]
+      }
+    ],
+    "acadie": [
+      {
+        "id": "radio-interview",
+        "eyebrow": "Radio-Canada · Le Réveil",
+        "heading": "Acadie on the radio",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Listen to Roger Cormier’s radio interview."
+          },
+          {
+            "kind": "p",
+            "text": "In French · Listen on Radio-Canada OHdio"
+          },
+          {
+            "kind": "link",
+            "text": "Listen to the interview ↗",
+            "href": "https://ici.radio-canada.ca/ohdio/premiere/emissions/le-reveil-nouvelle-ecosse-et-t-n/segments/rattrapage/2502170/revue-culturelle"
+          }
+        ]
+      },
+      {
+        "id": "courrier-interview",
+        "eyebrow": "Le Courrier · October 9, 2026",
+        "heading": "Acadie in Le Courrier",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Roger Cormier shares how Acadie began and his wish to share Acadian heritage with the next generation."
+          },
+          {
+            "kind": "p",
+            "text": "In French · By Margaux Paz Paredes"
+          },
+          {
+            "kind": "link",
+            "text": "Read the interview ↗",
+            "href": "https://lecourrier.com/francophonie/2026/10/09/application-acadie-patrimoine-et-histoire-a-lere-2-0/"
+          }
+        ]
+      },
+      {
+        "id": "features",
+        "eyebrow": "Cultural guide",
+        "heading": "A guided way into Acadian memory.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Acadie brings together cinematic stories, guided exploration, family names, kitchen traditions, voices, gatherings, and personal progress in one connected guide."
+          },
+          {
+            "kind": "h3",
+            "text": "Watch and read cinematic stories"
+          },
+          {
+            "kind": "p",
+            "text": "Follow connected stories with narration, subtitles, context, and sources."
+          },
+          {
+            "kind": "h3",
+            "text": "Explore living Acadie"
+          },
+          {
+            "kind": "p",
+            "text": "Find communities, events, heritage trails, food, regions, and cultural places."
+          },
+          {
+            "kind": "h3",
+            "text": "Build your own trail"
+          },
+          {
+            "kind": "p",
+            "text": "Save names and places, follow related stories, and track your path with the Acadian Passport."
+          }
+        ]
+      },
+      {
+        "id": "acadie-detail-4",
+        "eyebrow": "Stories",
+        "heading": "Stories that unfold across generations.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Acadie connects people, decisions, places, and movement across generations. Move from a single scene to the larger story around it, with cultural context kept close at hand."
+          },
+          {
+            "kind": "strong",
+            "text": "Cinematic series"
+          },
+          {
+            "kind": "p",
+            "text": "Watch and read Acadian stories with narration, subtitles, saved progress, and further context."
+          },
+          {
+            "kind": "strong",
+            "text": "Guided exploration"
+          },
+          {
+            "kind": "p",
+            "text": "Follow trails through communities, events, food traditions, heritage sites, regions, and towns."
+          },
+          {
+            "kind": "strong",
+            "text": "Roots and memory"
+          },
+          {
+            "kind": "p",
+            "text": "Connect surnames, places, and saved discoveries to a trail that is personal to you."
+          }
+        ]
+      },
+      {
+        "id": "passport",
+        "eyebrow": "Your trail",
+        "heading": "Save the names and places that make the guide your own.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Save family names and places, revisit stories, and keep track of discoveries with your Acadian Passport. Acadie keeps your trail close as you explore."
+          }
+        ]
+      },
+      {
+        "id": "acadie-detail-6",
+        "eyebrow": "What you can explore",
+        "heading": "Stories, communities, food traditions, voices, and gatherings.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Acadie is for people exploring heritage, travel, family roots, and cultural context without reducing the experience to a directory."
+          },
+          {
+            "kind": "li",
+            "text": "Cinematic stories, narration, subtitles, and reading paths."
+          },
+          {
+            "kind": "li",
+            "text": "Communities, events, heritage trails, regions, and cultural places."
+          },
+          {
+            "kind": "li",
+            "text": "Acadian surnames, connected history, and personal roots."
+          },
+          {
+            "kind": "li",
+            "text": "Food traditions, voices, gatherings, and cultural context."
+          },
+          {
+            "kind": "li",
+            "text": "Saved names and places, trail progress, and the Acadian Passport."
+          }
+        ]
+      },
+      {
+        "id": "acadie-detail-7",
+        "eyebrow": "Bilingual stories, thoughtfully sustained",
+        "heading": "Acadie+ supports ongoing bilingual storytelling.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "The optional Acadie+ subscription unlocks complete cinematic stories and helps fund continued bilingual cultural work. Feedback and questions are always welcome by email."
+          }
+        ]
+      }
+    ],
+    "acadie/fr-CA": [
+      {
+        "id": "radio-interview",
+        "eyebrow": "Radio-Canada · Le Réveil",
+        "heading": "Acadie à la radio",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Retrouvez l’entrevue de Roger Cormier à Radio-Canada."
+          },
+          {
+            "kind": "p",
+            "text": "En français · Sur Radio-Canada OHdio"
+          },
+          {
+            "kind": "link",
+            "text": "Écouter l’entrevue ↗",
+            "href": "https://ici.radio-canada.ca/ohdio/premiere/emissions/le-reveil-nouvelle-ecosse-et-t-n/segments/rattrapage/2502170/revue-culturelle"
+          }
+        ]
+      },
+      {
+        "id": "courrier-interview",
+        "eyebrow": "Le Courrier · 9 octobre 2026",
+        "heading": "Acadie dans Le Courrier",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Roger Cormier raconte la naissance d’Acadie et son envie de transmettre le patrimoine acadien aux prochaines générations."
+          },
+          {
+            "kind": "p",
+            "text": "En français · Par Margaux Paz Paredes"
+          },
+          {
+            "kind": "link",
+            "text": "Lire l’entrevue ↗",
+            "href": "https://lecourrier.com/francophonie/2026/10/09/application-acadie-patrimoine-et-histoire-a-lere-2-0/"
+          }
+        ]
+      },
+      {
+        "id": "features",
+        "eyebrow": "Guide culturel",
+        "heading": "Une façon guidée d’entrer dans la mémoire acadienne.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Acadie réunit des récits cinématographiques, l’exploration guidée, des noms de famille, la cuisine, des voix, des rassemblements et une progression personnelle dans un même guide."
+          },
+          {
+            "kind": "h3",
+            "text": "Voir et lire des récits cinématographiques"
+          },
+          {
+            "kind": "p",
+            "text": "Suivez des récits liés avec narration, sous-titres, contexte et sources."
+          },
+          {
+            "kind": "h3",
+            "text": "Explorer l’Acadie vivante"
+          },
+          {
+            "kind": "p",
+            "text": "Trouvez des communautés, événements, parcours patrimoniaux, saveurs, régions et lieux culturels."
+          },
+          {
+            "kind": "h3",
+            "text": "Créer votre propre parcours"
+          },
+          {
+            "kind": "p",
+            "text": "Enregistrez des noms et des lieux, suivez les récits associés et progressez avec le Passeport acadien."
+          }
+        ]
+      },
+      {
+        "id": "acadie-detail-4",
+        "eyebrow": "Histoires",
+        "heading": "Des récits qui traversent les générations.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Acadie relie des personnes, des décisions, des lieux et des mouvements à travers les générations. Passez d’une scène au récit plus vaste qui l’entoure, avec un contexte culturel à portée de main."
+          },
+          {
+            "kind": "strong",
+            "text": "Séries cinématographiques"
+          },
+          {
+            "kind": "p",
+            "text": "Voyez et lisez des récits acadiens avec narration, sous-titres, progression enregistrée et contexte complémentaire."
+          },
+          {
+            "kind": "strong",
+            "text": "Exploration guidée"
+          },
+          {
+            "kind": "p",
+            "text": "Suivez des parcours dans les communautés, les événements, les traditions culinaires, les sites patrimoniaux, les régions et les villes."
+          },
+          {
+            "kind": "strong",
+            "text": "Racines et mémoire"
+          },
+          {
+            "kind": "p",
+            "text": "Reliez noms de famille, lieux et découvertes enregistrées à un parcours qui vous ressemble."
+          }
+        ]
+      },
+      {
+        "id": "trail",
+        "eyebrow": "Votre parcours",
+        "heading": "Enregistrez les noms et les lieux qui rendent le guide personnel.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Enregistrez des noms de famille et des lieux, retrouvez des récits et suivez vos découvertes avec le Passeport acadien. Acadie garde votre parcours près de vous."
+          }
+        ]
+      },
+      {
+        "id": "acadie-detail-6",
+        "eyebrow": "À explorer",
+        "heading": "Récits, communautés, cuisine, voix et rassemblements.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "Acadie s’adresse aux personnes qui explorent leur patrimoine, un voyage, leurs racines familiales ou un contexte culturel."
+          },
+          {
+            "kind": "li",
+            "text": "Récits cinématographiques, narration, sous-titres et parcours de lecture."
+          },
+          {
+            "kind": "li",
+            "text": "Communautés, événements, parcours patrimoniaux, régions et lieux culturels."
+          },
+          {
+            "kind": "li",
+            "text": "Noms de famille acadiens, histoire liée et racines personnelles."
+          },
+          {
+            "kind": "li",
+            "text": "Traditions culinaires, voix, rassemblements et contexte culturel."
+          },
+          {
+            "kind": "li",
+            "text": "Noms et lieux enregistrés, progression et Passeport acadien."
+          }
+        ]
+      },
+      {
+        "id": "acadie-detail-7",
+        "eyebrow": "Des récits bilingues, soutenus avec soin",
+        "heading": "Acadie+ soutient la création de récits bilingues.",
+        "units": [
+          {
+            "kind": "p",
+            "text": "L’abonnement facultatif Acadie+ donne accès à l’ensemble des récits cinématographiques et aide à financer le travail culturel bilingue. Les commentaires et les questions sont toujours les bienvenus par courriel."
+          }
+        ]
+      }
+    ]
+  }
+}
