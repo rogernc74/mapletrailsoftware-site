@@ -1,0 +1,33 @@
+.billing-page { padding-block: 3rem 5rem; max-width: 56rem; }
+.billing-page h1 { margin-block: .5rem 1.5rem; }
+.billing-intro { max-width: 42rem; font-size: 1.15rem; line-height: 1.6; }
+.billing-benefits { margin-block: 2rem; }
+.billing-benefits table { width: 100%; margin-block: .85rem .65rem; table-layout: fixed; border: 1px solid #b9c9c5; border-radius: .75rem; border-spacing: 0; overflow: hidden; background: #fff; line-height: 1.4; }
+.billing-benefits th, .billing-benefits td { padding: .65rem clamp(.35rem, 2vw, 1rem); text-align: center; overflow-wrap: anywhere; }
+.billing-benefits th:first-child { width: 50%; text-align: left; }
+.billing-benefits thead th { background: #f6f8f4; }
+.billing-benefits tbody :is(th, td) { border-top: 1px solid #b9c9c5; }
+.billing-benefits :is(th, td):last-child { background: #f9edce; font-weight: 650; }
+.billing-benefits thead th:last-child { background: #f1d995; }
+.billing-account { margin-block: 2rem; padding: 1.5rem; border: 1px solid #b9c9c5; border-radius: 1rem; background: #f6f8f4; }
+.billing-account [data-status] { margin-top: 0; line-height: 1.6; }
+.billing-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+.billing-account-actions { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid #b9c9c5; }
+.billing-account button { cursor: pointer; min-height: 2.75rem; font: inherit; }
+.billing-account button:disabled { cursor: wait; opacity: .65; }
+.billing-account button:focus-visible { outline: 3px solid #215f60; outline-offset: 4px; }
+.billing-account [hidden] { display: none !important; }
+.billing-plans { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; margin-block: 1.5rem; }
+.billing-plan { display: flex; flex-direction: column; gap: .5rem; padding: 1.25rem; background: #fff; border: 1px solid #b9c9c5; border-radius: .75rem; }
+.billing-plan h3 { margin: 0; }
+.billing-price { font-size: 2rem; font-weight: 650; margin-block: .5rem 0; }
+.billing-plan .button { margin-top: auto; }
+.billing-small { font-size: .95rem; line-height: 1.6; }
+.billing-account-label { overflow-wrap: anywhere; }
+.billing-note { max-width: 44rem; line-height: 1.6; }
+@media (max-width: 36rem) {
+  .billing-page { padding-block: 2rem 3rem; }
+  .billing-benefits table { font-size: .875rem; }
+  .billing-benefits th, .billing-benefits td { padding: .55rem .25rem; hyphens: auto; }
+  .billing-plans { grid-template-columns: 1fr; }
+}

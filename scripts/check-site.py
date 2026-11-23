@@ -3,6 +3,7 @@ from pathlib import Path
 from urllib.parse import urlsplit,unquote
 from bs4 import BeautifulSoup
 import json,re,sys
+from hashlib import sha256
 root=Path(__file__).resolve().parents[1]
 files=sorted(root.rglob('*.html'));errors=[];links=0;images=0
 for p in files:
@@ -30,11 +31,26 @@ for p in files:
 # Preserve legal/support text, allowing only Roger’s company-name correction.
 import subprocess
 legal=[]
+launch_disclosures={
+ 'acadie/privacy/index.html': '9b3d4e7d2142e3af83606ac58628b39407c990ab44ad015ba521ad625f649bfb',
+ 'acadie/fr-CA/privacy/index.html': 'dfa780c5ad9015c4f40820fd14c8f59203c23ae52ac9983da372c4ccde1183b6',
+ 'acadie/terms/index.html': 'ca69e5f57aeb7fcd611b8044978e6ff2fcd05b855a35ce8f7328245295c76e2b',
+ 'acadie/fr-CA/terms/index.html': '2fbffe8123bbc5c7085ce99a968016d44b68709992471c0ff464cd69f5bd43fc',
+}
 for p in files:
  rel=p.relative_to(root).as_posix()
- if rel.count('/')>1 or rel in ['privacy/index.html','support/index.html']:
-  if rel=='acadie/fr-CA/index.html':continue
-  old=BeautifulSoup(subprocess.check_output(['git','show','b8eb850:'+rel]),'html.parser')
+ # Protect actual legal/support routes. Nesting alone also matches new product
+ # pages, which have no historical legal body in the pre-redesign baseline.
+ if any(part in {'privacy','support','terms','account-deletion'} for part in p.relative_to(root).parts[:-1]):
+  # PR13 deliberately updated these published privacy disclosures. Preserve
+  # their approved current bodies; retain the original baseline everywhere else.
+  if rel in launch_disclosures:
+   new=BeautifulSoup(p.read_text(),'html.parser')
+   if sha256(new.main.get_text(' ',strip=True).encode()).hexdigest()!=launch_disclosures[rel]:errors.append(rel+': reviewed legal text changed')
+   legal.append(rel)
+   continue
+  baseline='b8eb850'
+  old=BeautifulSoup(subprocess.check_output(['git','show',baseline+':'+rel]),'html.parser')
   new=BeautifulSoup(p.read_text(),'html.parser')
   if re.sub(r'MapleTrail Software(?! Inc\.)','MapleTrail Software Inc.',old.main.get_text(' ',strip=True)).replace('MapleTrail Software Inc..','MapleTrail Software Inc.')!=new.main.get_text(' ',strip=True):errors.append(rel+': legal/support main text changed')
   legal.append(rel)
