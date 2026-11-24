@@ -1,16 +1,2 @@
-export const billingConfig = Object.freeze({
-  "enabled": true,
-  "firebase": {
-    "projectId": "acadie-19d53",
-    "appId": "1:503964179507:web:e8d656c5c9af1d71389746",
-    "storageBucket": "acadie-19d53.firebasestorage.app",
-    "apiKey": "AIzaSyBFmKzNWtLvHQPy4ysSftcep6AJtZ1OiXk",
-    "authDomain": "acadie-19d53.firebaseapp.com",
-    "messagingSenderId": "503964179507",
-    "measurementId": "G-HGSPDQTT7Z",
-    "projectNumber": "503964179507",
-    "version": "2"
-  },
-  "appCheckSiteKey": "6Lf7dS4uAAAAAGY1fJINoTCooZ8M2AZTXKzssCsG",
-  "apiBase": "https://us-central1-acadie-19d53.cloudfunctions.net"
-});
+// Render generates the enabled configuration from its build environment.
+export const billingConfig = Object.freeze({enabled: false});
