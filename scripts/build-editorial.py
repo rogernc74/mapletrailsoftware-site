@@ -1,4 +1,6 @@
-"""Rebuild the seven static marketing pages; retain existing heads and legal bodies."""
+"""Rebuild the static marketing pages and Acadie release notes."""
+from argparse import ArgumentParser
+from datetime import date
 from pathlib import Path
 from html import escape
 import json
@@ -10,6 +12,13 @@ ACADIE_CURRENT=json.loads((ROOT/'content/acadie-current.json').read_text())
 NAMES={'acadie':'Acadie','momentslater':'Moments Later','habitwallet':'Habit Wallet','momentsaway':'Moments Away','ifneeded':'If Needed'}
 STORES={'acadie':'https://apps.apple.com/ca/app/acadie/id6769209012','momentslater':'https://apps.apple.com/ca/app/moments-later/id6761868181','habitwallet':'https://apps.apple.com/ca/app/habit-wallet/id6786388267','momentsaway':'https://apps.apple.com/ca/app/moments-away/id6765818943'}
 PLAY='https://play.google.com/store/apps/details?id=com.mapletrailsoftware.acadie'
+ACADIE_PAGES = {'en': 'acadie', 'fr': 'acadie/fr-CA'}
+RELEASE_NOTES = {'en': 'Release notes', 'fr': 'Notes de version'}
+RELEASE_PLATFORMS = {
+    'ios': {'en': 'iPhone and iPad', 'fr': 'iPhone et iPad'},
+    'android': {'en': 'Android', 'fr': 'Android'},
+    'both': {'en': 'iPhone, iPad and Android', 'fr': 'iPhone, iPad et Android'},
+}
 
 def img(src,alt='',cls='',lazy=True):
     from PIL import Image
@@ -105,12 +114,19 @@ def current_acadie(fr=False):
 
 def app_main(key,fr=False):
     d=(FRENCH if fr else DATA[key]).copy()
+    hero_actions = buttons(key, fr)
     if key=='acadie':
+        locale = 'fr' if fr else 'en'
+        base = f'/{ACADIE_PAGES[locale]}/'
+        hero_actions += (
+            f'<a class="button secondary" href="{base}plus/">Acadie+</a>'
+            f'<a class="text-link release-notes-link" href="{base}release-notes/">{RELEASE_NOTES[locale]}</a>'
+        )
         d['screen']='current-home.webp'
         d['sub']='Récits, jeux, créateurs et communauté vivante.' if fr else 'Stories, games, creators, and a living community.'
         d['desc']='Découvrez le patrimoine et les noms de famille, rencontrez les créateurs et échangez autour de la culture acadienne. Jouez sur iPhone et iPad.' if fr else 'Explore heritage and family roots, meet creators, and connect through living Acadian culture. Play daily games on iPhone and iPad.'
     photo='/images/editorial/'+d['photo']+'.webp'
-    main=f'<main id="main"><div class="wrap breadcrumb"><a href="/#apps">'+('Nos apps' if fr else 'Our apps')+f'</a><span>/</span><span>{d["tag"]}</span></div><section class="product-hero"><div class="wrap product-hero-grid"><div class="product-hero-copy"><p class="product-name">{d["tag"]}</p><h1>{d["title"]}</h1><p class="subhead">{d["sub"]}</p><div class="actions">{buttons(key,fr)}</div><p class="hero-description">{d["desc"]}</p><p class="availability">{d["platform"]}</p></div><figure class="product-art">{img(photo,"", "scene",False)}{img(screen_path(key,d["screen"],fr),d["tag"]+(" — écran de l’app" if fr else " — actual app screen"),"hero-screen",False)}</figure></div></section><section id="features" class="wrap story-rows">'
+    main=f'<main id="main"><div class="wrap breadcrumb"><a href="/#apps">'+('Nos apps' if fr else 'Our apps')+f'</a><span>/</span><span>{d["tag"]}</span></div><section class="product-hero"><div class="wrap product-hero-grid"><div class="product-hero-copy"><p class="product-name">{d["tag"]}</p><h1>{d["title"]}</h1><p class="subhead">{d["sub"]}</p><div class="actions">{hero_actions}</div><p class="hero-description">{d["desc"]}</p><p class="availability">{d["platform"]}</p></div><figure class="product-art">{img(photo,"", "scene",False)}{img(screen_path(key,d["screen"],fr),d["tag"]+(" — écran de l’app" if fr else " — actual app screen"),"hero-screen",False)}</figure></div></section><section id="features" class="wrap story-rows">'
     if key=='acadie':
         main=main.replace('<section id="features" class="wrap story-rows">',current_acadie(fr)+'<section id="features" class="wrap story-rows">')
         main=main.replace('<p class="hero-description">','<a class="text-link founder-link" href="#living-acadie">'+('Jeux, Communauté et créateurs' if fr else 'Games, Community, and creators')+'</a><p class="hero-description">')
@@ -148,15 +164,90 @@ def write_page(path,main,key=None,fr=False):
     if 'editorial.css' not in head:head=head.replace('</head>','<link rel="stylesheet" href="/editorial.css">\n</head>')
     p.write_text('<!doctype html>\n<html lang="'+('fr-CA' if fr else 'en')+'">\n'+head+'\n'+body.replace('<br>','<br> ')+'\n</html>\n')
 
-write_page('index.html',home_main())
-for k in DATA:write_page(k+'/index.html',app_main(k),k)
-write_page('acadie/fr-CA/index.html',app_main('acadie',True),'acadie',True)
-# Legal/support copy remains verbatim; share the same shell and editorial reading style.
-for p in ROOT.rglob('index.html'):
-    if p.relative_to(ROOT).as_posix() in ['index.html']+[k+'/index.html' for k in DATA]+['acadie/fr-CA/index.html']:continue
-    s=BeautifulSoup(p.read_text(),'html.parser');fr=s.html.get('lang','').startswith('fr');key=p.relative_to(ROOT).parts[0]
-    s.body['class']=['editorial','document-page'];[x.decompose() for x in s.select('.skip-link')];s.header.replace_with(BeautifulSoup(header(fr,key=='acadie',p.parent.name+'/'),'html.parser'));s.footer.replace_with(BeautifulSoup(footer(fr,key),'html.parser'));s.main['id']='main'
-    if not s.select_one('link[href="/editorial.css"]'):
-        l=s.new_tag('link',rel='stylesheet',href='/editorial.css');s.head.append(l)
-    p.write_text(str(s))
-print('Built 7 marketing pages and shared shell on 12 support/legal pages.')
+def release_date(iso, fr):
+    has_day = len(iso) == 10
+    released = date.fromisoformat(iso if has_day else f'{iso}-01')
+    if fr:
+        months = ('janvier', 'février', 'mars', 'avril', 'mai', 'juin',
+                  'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre')
+        day = f'{released.day} ' if has_day else ''
+        return f'{day}{months[released.month - 1]} {released.year}'
+    day = f' {released.day},' if has_day else ''
+    return f'{released:%B}{day} {released.year}'
+
+
+def write_acadie_release_notes():
+    # Run `python3 scripts/build-editorial.py --acadie` after editing the bilingual history.
+    releases = json.loads((ROOT / 'content/acadie-release-notes.json').read_text())
+    releases.sort(key=lambda release: tuple(map(int, release['version'].split('.'))), reverse=True)
+    for locale, base in ACADIE_PAGES.items():
+        fr = locale == 'fr'
+        label = RELEASE_NOTES[locale]
+        title = f'Acadie · {label}'
+        intro = ('Découvrez les nouveautés, les améliorations et les corrections de chaque version d’Acadie.' if fr
+                 else 'See what each Acadie update brings, from new games and stories to improvements and fixes.')
+        head = BeautifulSoup((ROOT / base / 'index.html').read_text(), 'html.parser').head
+        head.title.string = f'{title} — MapleTrail Software Inc.'
+        for meta in head.select('meta[name="description"], meta[property="og:description"]'):
+            meta['content'] = intro
+        head.select_one('meta[property="og:title"]')['content'] = title
+        head.select_one('meta[property="og:url"]')['content'] += 'release-notes/'
+        for link in head.select('link[rel="canonical"], link[hreflang]'):
+            link['href'] += 'release-notes/'
+
+        rows = []
+        for release in releases:
+            version = escape(release['version'])
+            iso = escape(release['date'])
+            devices = RELEASE_PLATFORMS[release['platform']][locale]
+            notes = ''.join(f'<li>{escape(note)}</li>' for note in release[locale])
+            rows.append(
+                f'<article id="version-{version}" aria-labelledby="heading-{version}">\n'
+                f'  <h2 id="heading-{version}">Version {version}</h2>\n'
+                f'  <p class="release-meta"><time datetime="{iso}">{release_date(iso, fr)}</time> · {devices}</p>\n'
+                f'  <ul>{notes}</ul>\n'
+                '</article>'
+            )
+        main = (
+            f'<main id="main" class="wrap release-notes">\n'
+            f'<div class="breadcrumb"><a href="/{base}/">Acadie</a><span aria-hidden="true">/</span><span>{label}</span></div>\n'
+            f'<div class="release-intro"><h1>{title}</h1><p>{intro}</p></div>\n'
+            + '\n'.join(rows) + '\n</main>'
+        )
+        lang = 'fr-CA' if fr else 'en'
+        output = ROOT / base / 'release-notes/index.html'
+        output.parent.mkdir(exist_ok=True)
+        output.write_text(
+            f'<!doctype html>\n<html lang="{lang}">\n{head}\n<body class="editorial acadie">\n'
+            f'{header(fr, True, "release-notes/")}\n{main}\n{footer(fr, "acadie")}\n</body>\n</html>\n'
+        )
+
+
+def build_acadie():
+    for locale, page in ACADIE_PAGES.items():
+        fr = locale == 'fr'
+        write_page(f'{page}/index.html', app_main('acadie', fr), 'acadie', fr)
+    write_acadie_release_notes()
+
+
+if __name__ == '__main__':
+    parser = ArgumentParser(description=__doc__)
+    parser.add_argument('--acadie', action='store_true', help='Only rebuild Acadie landing pages and release notes.')
+    args = parser.parse_args()
+    build_acadie()
+    if not args.acadie:
+        write_page('index.html', home_main())
+        for k in DATA:
+            if k != 'acadie':
+                write_page(k+'/index.html', app_main(k), k)
+        # Legal/support copy remains verbatim; share the same shell and editorial reading style.
+        generated = {'index.html', *(k+'/index.html' for k in DATA), 'acadie/fr-CA/index.html',
+                     *(f'{page}/release-notes/index.html' for page in ACADIE_PAGES.values())}
+        for p in ROOT.rglob('index.html'):
+            if p.relative_to(ROOT).as_posix() in generated:continue
+            s=BeautifulSoup(p.read_text(),'html.parser');fr=s.html.get('lang','').startswith('fr');key=p.relative_to(ROOT).parts[0]
+            s.body['class']=['editorial','document-page'];[x.decompose() for x in s.select('.skip-link')];s.header.replace_with(BeautifulSoup(header(fr,key=='acadie',p.parent.name+'/'),'html.parser'));s.footer.replace_with(BeautifulSoup(footer(fr,key),'html.parser'));s.main['id']='main'
+            if not s.select_one('link[href="/editorial.css"]'):
+                l=s.new_tag('link',rel='stylesheet',href='/editorial.css');s.head.append(l)
+            p.write_text(str(s))
+    print('Built Acadie landing pages and release notes.' if args.acadie else 'Built marketing pages, release notes, and support/legal shell.')
