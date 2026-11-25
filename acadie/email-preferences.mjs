@@ -4,7 +4,7 @@ const topicLabels = {
 };
 const words = {
   en: {
-    topics: 'Email topics', loading: 'Loading email preferences…',
+    topics: 'Email topics', selectAll: 'Select all three', loading: 'Loading email preferences…',
     unavailable: 'Email preferences are unavailable. Try again.',
     consent: 'By choosing topics, I agree to receive the selected marketing emails from MapleTrail Software Inc. about Acadie.',
     empty: 'Choose the Acadie emails you want to receive.',
@@ -17,7 +17,7 @@ const words = {
     changed: 'Your choices changed elsewhere. Review them and try again.',
   },
   'fr-CA': {
-    topics: 'Sujets des courriels', loading: 'Chargement des préférences de courriel…',
+    topics: 'Sujets des courriels', selectAll: 'Choisir les trois sujets', loading: 'Chargement des préférences de courriel…',
     unavailable: 'Les préférences de courriel sont indisponibles. Réessayez.',
     consent: 'En choisissant des sujets, j’accepte de recevoir les courriels promotionnels sélectionnés de MapleTrail Software Inc. au sujet d’Acadie.',
     empty: 'Choisissez les courriels d’Acadie que vous souhaitez recevoir.',
@@ -48,6 +48,12 @@ export function mountEmailPreferences(root, locale, call) {
   const mailing = senderInfo.querySelector('[data-email-sender-address]');
   const privacy = senderInfo.querySelector('[data-email-privacy]');
   const contact = senderInfo.querySelector('[data-email-contact]');
+  const selectAll = document.createElement('button');
+  selectAll.type = 'button';
+  selectAll.className = 'button secondary';
+  selectAll.hidden = true;
+  selectAll.textContent = copy.selectAll;
+  fieldset.append(selectAll);
   const boxes = Object.entries(topicLabels[locale]).map(([id, title]) => {
     const label = document.createElement('label');
     const input = document.createElement('input');
@@ -72,6 +78,8 @@ export function mountEmailPreferences(root, locale, call) {
     const canEdit = active || (canEnroll && !pending);
     fieldset.hidden = !canEdit;
     fieldset.disabled = busy;
+    selectAll.hidden = active || !canEdit;
+    selectAll.disabled = busy || boxes.every(input => input.checked);
     for (const input of boxes) {
       input.disabled = (!config?.enabled || senderInfo.hidden) && !(row?.topics ?? []).includes(input.value);
     }
@@ -150,6 +158,11 @@ export function mountEmailPreferences(root, locale, call) {
     const active = row?.status === 'active';
     void run(() => call({action: active ? 'topics' : 'signup', surface: 'web', locale,
       topics: topics(), version: config.copyVersion, ...(active ? {revision: row.topicsRevision} : {address: config.address})}));
+  });
+  selectAll.addEventListener('click', () => {
+    if (selectAll.hidden || selectAll.disabled) return;
+    for (const input of boxes) input.checked = true;
+    controls();
   });
   unsubscribe.addEventListener('click', () => {
     if (!unsubscribe.hidden) void run(() => call({action: 'unsubscribe'}));
