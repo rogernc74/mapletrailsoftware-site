@@ -14,11 +14,6 @@ STORES={'acadie':'https://apps.apple.com/ca/app/acadie/id6769209012','momentslat
 PLAY='https://play.google.com/store/apps/details?id=com.mapletrailsoftware.acadie'
 ACADIE_PAGES = {'en': 'acadie', 'fr': 'acadie/fr-CA'}
 RELEASE_NOTES = {'en': 'Release notes', 'fr': 'Notes de version'}
-RELEASE_PLATFORMS = {
-    'ios': {'en': 'iPhone and iPad', 'fr': 'iPhone et iPad'},
-    'android': {'en': 'Android', 'fr': 'Android'},
-    'both': {'en': 'iPhone, iPad and Android', 'fr': 'iPhone, iPad et Android'},
-}
 
 def img(src,alt='',cls='',lazy=True):
     from PIL import Image
@@ -184,8 +179,9 @@ def write_acadie_release_notes():
         fr = locale == 'fr'
         label = RELEASE_NOTES[locale]
         title = f'Acadie · {label}'
-        intro = ('Découvrez les nouveautés, les améliorations et les corrections de chaque version d’Acadie.' if fr
-                 else 'See what each Acadie update brings, from new games and stories to improvements and fixes.')
+        intro = ('Découvrez les nouveautés et les améliorations d’Acadie sur iPhone, iPad et Android. '
+                 'Les dates de sortie peuvent varier selon la boutique.' if fr else
+                 'See what’s new in Acadie on iPhone, iPad and Android. Release dates can vary by store.')
         head = BeautifulSoup((ROOT / base / 'index.html').read_text(), 'html.parser').head
         head.title.string = f'{title} — MapleTrail Software Inc.'
         for meta in head.select('meta[name="description"], meta[property="og:description"]'):
@@ -199,12 +195,11 @@ def write_acadie_release_notes():
         for release in releases:
             version = escape(release['version'])
             iso = escape(release['date'])
-            devices = RELEASE_PLATFORMS[release['platform']][locale]
             notes = ''.join(f'<li>{escape(note)}</li>' for note in release[locale])
             rows.append(
                 f'<article id="version-{version}" aria-labelledby="heading-{version}">\n'
                 f'  <h2 id="heading-{version}">Version {version}</h2>\n'
-                f'  <p class="release-meta"><time datetime="{iso}">{release_date(iso, fr)}</time> · {devices}</p>\n'
+                f'  <p class="release-meta"><time datetime="{iso}">{release_date(iso, fr)}</time></p>\n'
                 f'  <ul>{notes}</ul>\n'
                 '</article>'
             )
