@@ -69,13 +69,13 @@ export function mountEmailPreferences(root, locale, call) {
   code.parentElement.append(' ' + copy.code);
   claim.textContent = copy.claim;
 
-  let session = false, generation = 0, config, row, pending = false, busy = false;
+  let session = false, generation = 0, config, row, hasStatus = false, pending = false, busy = false;
   const topics = () => boxes.filter(input => input.checked).map(input => input.value);
   const sameTopics = () => topics().join() === (row?.topics ?? []).join();
   function controls() {
-    const active = row?.status === 'active';
+    const active = hasStatus && row?.status === 'active';
     const canEnroll = Boolean(config?.enabled && config.address && !senderInfo.hidden);
-    const canEdit = active || (canEnroll && !pending);
+    const canEdit = hasStatus && (active || (canEnroll && !pending));
     fieldset.hidden = !canEdit;
     fieldset.disabled = busy;
     selectAll.hidden = active || !canEdit;
@@ -89,10 +89,11 @@ export function mountEmailPreferences(root, locale, call) {
     save.textContent = active ? copy.save : copy.subscribe;
     unsubscribe.hidden = !active;
     unsubscribe.disabled = busy;
-    recovery.hidden = active || !config?.address;
+    recovery.hidden = !hasStatus || active || !config?.address;
     claim.disabled = busy || code.value.trim().length !== 131;
   }
   function render() {
+    root.hidden = !config?.available;
     form.hidden = !config?.available;
     const sender = config?.sender;
     senderName.textContent = sender?.name ?? '';
@@ -145,11 +146,15 @@ export function mountEmailPreferences(root, locale, call) {
   function load() {
     return run(async () => {
       const expected = generation;
+      hasStatus = false;
       status.textContent = copy.loading;
       const settings = await call({action: 'config'});
-      const subscription = settings.available ? await call({action: 'status'}) : null;
       if (expected !== generation) return;
       config = settings;
+      if (!settings.available || !root.open) return null;
+      const subscription = await call({action: 'status'});
+      if (expected !== generation) return;
+      hasStatus = true;
       return subscription;
     });
   }
@@ -180,14 +185,16 @@ export function mountEmailPreferences(root, locale, call) {
     busy = false;
     config = undefined;
     row = undefined;
+    hasStatus = false;
     pending = false;
     code.value = '';
     root.open = false;
-    root.hidden = !signedIn;
+    root.hidden = true;
     form.hidden = true;
     address.textContent = '';
     status.textContent = '';
     for (const input of boxes) input.checked = false;
     controls();
+    if (signedIn) void load();
   };
 }

@@ -21,3 +21,9 @@ export function createRefreshFence() {
     invalidate: () => { generation++; },
   };
 }
+
+export function acadieCallableURL(config, action) {
+  const base = action === 'acadieEmailPreferences' ? config.emailApiBase : config.apiBase;
+  if (!base) throw Error('callable-unavailable');
+  return `${base}/${action}`;
+}

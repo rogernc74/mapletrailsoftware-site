@@ -1,5 +1,5 @@
 import {billingConfig} from './billing-config.js';
-import {billingPresentation, createRefreshFence} from './billing-state.mjs';
+import {acadieCallableURL, billingPresentation, createRefreshFence} from './billing-state.mjs?v=2';
 
 const french = document.documentElement.lang === 'fr-CA';
 const words = french ? {
@@ -95,7 +95,7 @@ async function call(action, body, expectedEpoch) {
     user.getIdToken(), appCheckAPI.getToken(appCheck),
   ]);
   if (epoch !== expectedEpoch || auth.currentUser?.uid !== user.uid) throw Error('account-changed');
-  const response = await fetch(`${billingConfig.apiBase}/${action}`, {
+  const response = await fetch(acadieCallableURL(billingConfig, action), {
     method: 'POST', credentials: 'omit', cache: 'no-store', redirect: 'error',
     referrerPolicy: 'no-referrer', signal: controller.signal,
     headers: {'Content-Type': 'application/json', Authorization: `Bearer ${idToken}`,
