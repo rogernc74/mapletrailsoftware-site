@@ -106,7 +106,8 @@ export function mountEmailPreferences(root, locale, call) {
     address.textContent = row?.address ?? config?.address ?? '';
     for (const input of boxes) input.checked = (row?.topics ?? []).includes(input.value);
     status.textContent = !config?.available ? copy.unavailable : pending ? copy.pending :
-      row?.suppressed ? copy.suppressed : copy[row?.status] ?? (config.address ? copy.empty : copy.noAddress);
+      row?.suppressed && row.status !== 'unsubscribed' ? copy.suppressed :
+        copy[row?.status] ?? (config.address ? copy.empty : copy.noAddress);
     controls();
   }
   async function run(action) {
