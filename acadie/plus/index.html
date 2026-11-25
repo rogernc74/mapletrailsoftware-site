@@ -46,6 +46,28 @@
 </div>
 <div data-signed-in hidden>
 <p data-account-label class="billing-account-label"></p>
+<details class="billing-email-preferences" data-email-preferences hidden>
+<summary>Email Preferences</summary>
+<p role="status" aria-live="polite"></p>
+<form hidden novalidate>
+<p data-email-address></p>
+<fieldset><legend>Email topics</legend></fieldset>
+<p class="billing-small" data-email-consent></p>
+<div class="billing-small" data-email-sender hidden>
+<p data-email-sender-name></p>
+<p data-email-sender-address></p>
+<p><a data-email-privacy>Privacy policy</a> · <a data-email-contact>Contact MapleTrail</a></p>
+</div>
+<div class="billing-actions">
+<button type="submit" class="button" disabled></button>
+<button type="button" class="button secondary" data-email-unsubscribe hidden></button>
+</div>
+<div data-email-recovery hidden>
+<label><input type="text" maxlength="131" autocomplete="off" spellcheck="false"></label>
+<button type="button" class="button secondary" data-email-claim disabled></button>
+</div>
+</form>
+</details>
 <div data-plans hidden class="billing-plans">
 <article class="billing-plan"><h3>Monthly</h3><p class="billing-price" data-price="monthly"></p><p>per month</p><p class="billing-small">Plus applicable taxes.</p><button type="button" class="button" data-checkout="monthly">Choose monthly</button></article>
 <article class="billing-plan"><h3>Annual</h3><p class="billing-price" data-price="annual"></p><p>per year</p><p class="billing-small">Plus applicable taxes.</p><button type="button" class="button" data-checkout="annual">Choose annual</button></article>
