@@ -19,6 +19,7 @@ def main():
     scripts = Path(__file__).resolve().parent
     config = json.loads((scripts / "acadie-billing-config.json").read_text(encoding="utf-8"))
     config["firebase"]["apiKey"] = key
+    config["giftEnabled"] = os.environ.get("ACADIE_GIFT_WEBSITE_ENABLED") == "true"
     module = f"export const billingConfig = Object.freeze({json.dumps(config, indent=2)});\n"
     args.output.write_text(module, encoding="utf-8")
 

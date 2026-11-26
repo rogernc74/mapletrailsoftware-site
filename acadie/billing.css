@@ -16,7 +16,7 @@
 .billing-account button { cursor: pointer; min-height: 2.75rem; font: inherit; }
 .billing-account button:disabled { cursor: wait; opacity: .65; }
 .billing-account button:focus-visible { outline: 3px solid #215f60; outline-offset: 4px; }
-.billing-account [hidden] { display: none !important; }
+.billing-account [hidden], [data-gifts-link][hidden] { display: none !important; }
 .billing-plans { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; margin-block: 1.5rem; }
 .billing-plan { display: flex; flex-direction: column; gap: .5rem; padding: 1.25rem; background: #fff; border: 1px solid #b9c9c5; border-radius: .75rem; }
 .billing-plan h3 { margin: 0; }
