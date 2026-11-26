@@ -1,0 +1,34 @@
+[data-gift] [hidden] { display: none !important; }
+
+.gift-panel {
+  margin-block: 1.5rem;
+}
+
+.gift-panel form {
+  display: grid;
+  gap: .75rem;
+  max-width: 29rem;
+}
+
+.gift-panel label {
+  font-weight: 650;
+}
+
+.gift-panel input {
+  color: inherit;
+  background: transparent;
+  border: 1px solid currentColor;
+  border-radius: .5rem;
+  padding: .75rem;
+  min-width: 0;
+  font: inherit;
+}
+
+.gift-panel form .button {
+  justify-self: start;
+}
+
+.gift-panel button:disabled {
+  opacity: .65;
+  cursor: wait;
+}
