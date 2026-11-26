@@ -1,5 +1,7 @@
 # Editorial asset provenance
 
+- `images/acadie/relay-for-life.webp`: text-free ImageGen artwork of walkers and luminarias at dusk for the bilingual Acadie+ campaign banner. The website renders the English and Canadian French campaign copy as HTML. The 1983×793 master was resized and exported as WebP for this banner.
+
 - `images/editorial/mapletrail-lockup.png`: whitespace crop `(74,142,439,380)` of the repository's authentic optimized `images/mapletrail-logo.png`; original leaf and wordmark pixels retained.
 - All app UI: repository screenshots. PR 11's optimized images reused. `images/momentslater/capture.webp`, `timeline.webp`: cropped actual screenshot region `(152,372,588,1317)` after resizing the original correction-commit PNGs to 740×1600; poster-only text/margins removed. `mac-today.webp`: authentic Mac screenshot region, crop `(305,258,975,710)` from the 1280×800 resized original poster.
 - `images/editorial/coast.webp`, `memories.webp`, `essentials.webp`: generated using the built-in ImageGen tool with the selected homepage/Moments Later/If Needed concept as style references. Source masters retained in `../generated_images/`. Supporting decorative photographs, no generated product interface or logo.

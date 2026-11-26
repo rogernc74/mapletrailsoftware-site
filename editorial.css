@@ -136,3 +136,51 @@
 .release-notes li + li {
   margin-top: 6px;
 }
+
+.editorial .relay-campaign {
+  margin-block: 2rem 1rem;
+  padding: clamp(1.4rem, 4vw, 2.5rem);
+  border-radius: .85rem;
+  color: #fff7ed;
+  background: linear-gradient(90deg, #23142f 0%, #23142ff5 37%, #23142fc7 61%, #23142f26 100%),
+              url('/images/acadie/relay-for-life.webp') center right / cover no-repeat #23142f;
+}
+
+.editorial .relay-campaign h2 {
+  margin-bottom: .65rem;
+  max-width: 22ch;
+  font-size: clamp(1.8rem, 3.4vw, 2.55rem);
+}
+
+.editorial .relay-campaign p { max-width: 44ch; line-height: 1.55; }
+.editorial .relay-campaign .relay-campaign-dates {
+  margin-top: .8rem;
+  color: #f9dcab;
+  font-size: .9rem;
+}
+
+.editorial .relay-callout {
+  display: block;
+  max-width: 30rem;
+  margin-block: .9rem .25rem;
+  padding: .75rem 1rem;
+  border-inline-start: .2rem solid #795189;
+  border-radius: .35rem;
+  background: #f1e9f5;
+  color: #3b254a;
+  line-height: 1.45;
+}
+
+.editorial .relay-callout strong { display: block; text-decoration: underline; text-underline-offset: .17em; }
+.editorial .relay-callout span { display: block; margin-top: .15rem; font-size: .9rem; }
+.editorial .relay-callout:hover { background: #e8dcec; }
+
+@media (max-width: 650px) {
+  .editorial .relay-campaign {
+    padding-bottom: 4.5rem;
+    background-image: linear-gradient(180deg, #23142f 0%, #23142ff5 50%, #23142fb3 73%, #23142f4d 100%),
+                      url('/images/acadie/relay-for-life.webp');
+    background-position: center, 75% bottom;
+  }
+  .editorial .relay-callout { margin-block: 0 1.25rem; }
+}
