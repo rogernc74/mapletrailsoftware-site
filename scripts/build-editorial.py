@@ -196,8 +196,6 @@ def write_acadie_release_notes():
             version = escape(release['version'])
             iso = escape(release['date'])
             release_meta = f'<time datetime="{iso}">{release_date(iso, fr)}</time>'
-            if 'date_store' in release:
-                release_meta += f' ({escape(release["date_store"])})'
             if 'platforms' in release:
                 release_meta = f'{escape(release["platforms"][locale])} · {release_meta}'
             notes = ''.join(f'<li>{escape(note)}</li>' for note in release[locale])
