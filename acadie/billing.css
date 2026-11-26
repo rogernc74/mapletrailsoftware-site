@@ -31,3 +31,12 @@
   .billing-benefits th, .billing-benefits td { padding: .55rem .25rem; hyphens: auto; }
   .billing-plans { grid-template-columns: 1fr; }
 }
+
+.billing-email-preferences { margin-block: 1rem 1.5rem; }
+.billing-email-preferences summary { cursor: pointer; font-weight: 650; }
+.billing-email-preferences fieldset { padding: 0; border: 0; margin-block: .75rem; }
+.billing-email-preferences legend { font-weight: 650; margin-block-end: .35rem; }
+.billing-email-preferences fieldset > button { margin-block: .25rem; }
+.billing-email-preferences label { display: block; padding-block: .25rem; cursor: pointer; }
+.billing-email-preferences [data-email-recovery] { margin-block: .75rem; }
+.billing-email-preferences input[type="text"] { max-width: 100%; }

@@ -1,5 +1,5 @@
 import {billingConfig} from './billing-config.js';
-import {billingPresentation, createRefreshFence} from './billing-state.mjs';
+import {acadieCallableURL, billingPresentation, createRefreshFence} from './billing-state.mjs?v=2';
 
 const french = document.documentElement.lang === 'fr-CA';
 const words = french ? {
@@ -46,10 +46,19 @@ const management = root.querySelector('[data-management]');
 const cancellation = root.querySelector('[data-cancellation]');
 const storeNote = root.querySelector('[data-store-note]');
 const accountLabel = root.querySelector('[data-account-label]');
-const buttons = [...root.querySelectorAll('button')];
+const buttons = [...root.querySelectorAll('button')].filter(button => !button.closest('[data-email-preferences]'));
 let epoch = 0, currentUser = null, authAPI, auth, appCheckAPI, appCheck;
 let busy = false, accessKnown = false, controller = new AbortController();
 const refreshFence = createRefreshFence();
+let setEmailSession = () => {};
+const emailRoot = root.querySelector('[data-email-preferences]');
+if (emailRoot) {
+  import('./email-preferences.mjs').then(({mountEmailPreferences}) => {
+    setEmailSession = mountEmailPreferences(emailRoot, french ? 'fr-CA' : 'en',
+      body => call('acadieEmailPreferences', body, epoch));
+    setEmailSession(Boolean(currentUser));
+  }).catch(() => { /* Optional preferences cannot prevent account or checkout startup. */ });
+}
 
 function setBusy(value) {
   busy = value;
@@ -86,14 +95,20 @@ async function call(action, body, expectedEpoch) {
     user.getIdToken(), appCheckAPI.getToken(appCheck),
   ]);
   if (epoch !== expectedEpoch || auth.currentUser?.uid !== user.uid) throw Error('account-changed');
-  const response = await fetch(`${billingConfig.apiBase}/${action}`, {
+  const response = await fetch(acadieCallableURL(billingConfig, action), {
     method: 'POST', credentials: 'omit', cache: 'no-store', redirect: 'error',
     referrerPolicy: 'no-referrer', signal: controller.signal,
     headers: {'Content-Type': 'application/json', Authorization: `Bearer ${idToken}`,
       'X-Firebase-AppCheck': attestation.token},
-    body: JSON.stringify(body),
+    body: JSON.stringify(action === 'acadieEmailPreferences' ? {data: body} : body),
   });
   if (epoch !== expectedEpoch || auth.currentUser?.uid !== user.uid) throw Error('account-changed');
+  if (action === 'acadieEmailPreferences') {
+    const payload = await response.json();
+    if (epoch !== expectedEpoch) throw Error('account-changed');
+    if (!response.ok || !payload.result) throw Error(payload.error?.status === 'ABORTED' ? 'aborted' : 'email-unavailable');
+    return payload.result;
+  }
   if (!response.ok) throw Error('billing-unavailable');
   const data = await response.json();
   if (epoch !== expectedEpoch) throw Error('account-changed');
@@ -219,6 +234,7 @@ async function start() {
       signedOut.hidden = !!user;
       signedIn.hidden = !user;
       accountLabel.textContent = user?.email ?? '';
+      setEmailSession(Boolean(user));
       if (user) refreshAccess(epoch);
       else { status.textContent = words.signedOut; setBusy(false); }
     });

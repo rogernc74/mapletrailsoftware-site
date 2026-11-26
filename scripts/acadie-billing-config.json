@@ -12,5 +12,6 @@
     "version": "2"
   },
   "appCheckSiteKey": "6Lf7dS4uAAAAAGY1fJINoTCooZ8M2AZTXKzssCsG",
-  "apiBase": "https://us-central1-acadie-19d53.cloudfunctions.net"
+  "apiBase": "https://us-central1-acadie-19d53.cloudfunctions.net",
+  "emailApiBase": "https://northamerica-northeast1-acadie-19d53.cloudfunctions.net"
 }
