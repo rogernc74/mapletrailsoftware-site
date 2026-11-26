@@ -1,5 +1,24 @@
 [
   {
+    "version": "2.0.5",
+    "date": "2026-11-26",
+    "date_store": "Google Play",
+    "platforms": {
+      "en": "iOS and Android",
+      "fr": "iOS et Android"
+    },
+    "en": [
+      "Set your email preferences in Acadie and choose which updates you’d like to receive.",
+      "Give a year of Acadie+ or redeem a gift on the Acadie website. Sign in to your Acadie account to use your gift in the app.",
+      "Contact Acadie Support directly from the app’s settings."
+    ],
+    "fr": [
+      "Choisissez dans Acadie les nouvelles que vous souhaitez recevoir par courriel.",
+      "Offrez un an d’Acadie+ ou activez un cadeau sur le site d’Acadie. Connectez-vous à votre compte Acadie pour en profiter dans l’app.",
+      "Communiquez avec l’assistance d’Acadie directement depuis les paramètres de l’app."
+    ]
+  },
+  {
     "version": "2.0.4",
     "date": "2026-11",
     "en": [
