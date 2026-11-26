@@ -124,6 +124,17 @@ def app_main(key,fr=False):
     main=f'<main id="main"><div class="wrap breadcrumb"><a href="/#apps">'+('Nos apps' if fr else 'Our apps')+f'</a><span>/</span><span>{d["tag"]}</span></div><section class="product-hero"><div class="wrap product-hero-grid"><div class="product-hero-copy"><p class="product-name">{d["tag"]}</p><h1>{d["title"]}</h1><p class="subhead">{d["sub"]}</p><div class="actions">{hero_actions}</div><p class="hero-description">{d["desc"]}</p><p class="availability">{d["platform"]}</p></div><figure class="product-art">{img(photo,"", "scene",False)}{img(screen_path(key,d["screen"],fr),d["tag"]+(" — écran de l’app" if fr else " — actual app screen"),"hero-screen",False)}</figure></div></section><section id="features" class="wrap story-rows">'
     if key=='acadie':
         main=main.replace('<section id="features" class="wrap story-rows">',current_acadie(fr)+'<section id="features" class="wrap story-rows">')
+        relay_title = 'Soutenez le Relais pour la vie' if fr else 'Support Relay For Life'
+        relay_message = (
+            'Un don de 2 $ CA pour chaque abonnement annuel à Acadie+ acheté sur le Web.'
+            if fr else '$2 CAD donated with each yearly Acadie+ web subscription.'
+        )
+        relay_callout = (
+            f'<a class="relay-callout" href="{base}plus/#relay-for-life">'
+            f'<strong>{relay_title}</strong><span>{relay_message}</span></a>'
+        )
+        main=main.replace(f'<div class="actions">{hero_actions}</div>',
+                          f'<div class="actions">{hero_actions}</div>{relay_callout}', 1)
         main=main.replace('<p class="hero-description">','<a class="text-link founder-link" href="#living-acadie">'+('Jeux, Communauté et créateurs' if fr else 'Games, Community, and creators')+'</a><p class="hero-description">')
     if key=='momentslater':
         marker='<section id="features" class="wrap story-rows">'
